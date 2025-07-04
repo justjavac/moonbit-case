@@ -1,3 +1,8 @@
 target/
 .mooncakes/
 .DS_Store
+
+# Coverage-related files
+moonbit-coverage-*.txt
+_coverage
+bisect.coverage
