@@ -15,180 +15,180 @@ moon add justjavac/case
 
 ```moonbit
 // Core case conversions
-camelCase("hello world")       // "helloWorld"
-pascalCase("hello world")      // "HelloWorld"
-snakeCase("hello world")       // "hello_world"
-kebabCase("hello world")       // "hello-world"
-constantCase("hello world")    // "HELLO_WORLD"
+camel_case("hello world")       // "helloWorld"
+pascal_case("hello world")      // "HelloWorld"
+snake_case("hello world")       // "hello_world"
+kebab_case("hello world")       // "hello-world"
+constant_case("hello world")    // "HELLO_WORLD"
 
 // Additional transformations
-swapCase("Hello World")        // "hELLO wORLD"
-titleCase("the lord of rings") // "The Lord of Rings"
-reverseCase("hello")           // "olleh"
+swap_case("Hello World")        // "hELLO wORLD"
+title_case("the lord of rings") // "The Lord of Rings"
+reverse_case("hello")           // "olleh"
 ```
 
 ## API Reference
 
 ### Core Case Conversions
 
-#### `camelCase(text : String) -> String`
+#### `camel_case(text : String) -> String`
 
 Convert string to camelCase.
 
 ```moonbit
-camelCase("hello world")      // "helloWorld"
-camelCase("Hello-World")      // "helloWorld"
-camelCase("HELLO_WORLD")      // "helloWorld"
+camel_case("hello world")      // "helloWorld"
+camel_case("Hello-World")      // "helloWorld"
+camel_case("HELLO_WORLD")      // "helloWorld"
 ```
 
-#### `pascalCase(text : String) -> String`
+#### `pascal_case(text : String) -> String`
 
 Convert string to PascalCase (UpperCamelCase).
 
 ```moonbit
-pascalCase("hello world")     // "HelloWorld"
-pascalCase("hello-world")     // "HelloWorld"
-pascalCase("HELLO_WORLD")     // "HelloWorld"
+pascal_case("hello world")     // "HelloWorld"
+pascal_case("hello-world")     // "HelloWorld"
+pascal_case("HELLO_WORLD")     // "HelloWorld"
 ```
 
-#### `snakeCase(text : String) -> String`
+#### `snake_case(text : String) -> String`
 
 Convert string to snake_case.
 
 ```moonbit
-snakeCase("hello world")      // "hello_world"
-snakeCase("HelloWorld")       // "hello_world"
-snakeCase("hello-world")      // "hello_world"
+snake_case("hello world")      // "hello_world"
+snake_case("HelloWorld")       // "hello_world"
+snake_case("hello-world")      // "hello_world"
 ```
 
-#### `kebabCase(text : String) -> String`
+#### `kebab_case(text : String) -> String`
 
 Convert string to kebab-case (param-case).
 
 ```moonbit
-kebabCase("hello world")      // "hello-world"
-kebabCase("HelloWorld")       // "hello-world"
-kebabCase("hello_world")      // "hello-world"
+kebab_case("hello world")      // "hello-world"
+kebab_case("HelloWorld")       // "hello-world"
+kebab_case("hello_world")      // "hello-world"
 ```
 
-#### `constantCase(text : String) -> String`
+#### `constant_case(text : String) -> String`
 
 Convert string to CONSTANT_CASE (SCREAMING_SNAKE_CASE).
 
 ```moonbit
-constantCase("hello world")   // "HELLO_WORLD"
-constantCase("HelloWorld")    // "HELLO_WORLD"
-constantCase("hello-world")   // "HELLO_WORLD"
+constant_case("hello world")   // "HELLO_WORLD"
+constant_case("HelloWorld")    // "HELLO_WORLD"
+constant_case("hello-world")   // "HELLO_WORLD"
 ```
 
-#### `dotCase(text : String) -> String`
+#### `dot_case(text : String) -> String`
 
 Convert string to dot.case.
 
 ```moonbit
-dotCase("hello world")        // "hello.world"
-dotCase("HelloWorld")         // "hello.world"
-dotCase("hello_world")        // "hello.world"
+dot_case("hello world")        // "hello.world"
+dot_case("HelloWorld")         // "hello.world"
+dot_case("hello_world")        // "hello.world"
 ```
 
-#### `pathCase(text : String) -> String`
+#### `path_case(text : String) -> String`
 
 Convert string to path/case.
 
 ```moonbit
-pathCase("hello world")       // "hello/world"
-pathCase("HelloWorld")        // "hello/world"
-pathCase("hello_world")       // "hello/world"
+path_case("hello world")       // "hello/world"
+path_case("HelloWorld")        // "hello/world"
+path_case("hello_world")       // "hello/world"
 ```
 
-#### `trainCase(text : String) -> String`
+#### `train_case(text : String) -> String`
 
 Convert string to Train-Case (HTTP-Header-Case).
 
 ```moonbit
-trainCase("hello world")      // "Hello-World"
-trainCase("HelloWorld")       // "Hello-World"
-trainCase("hello_world")      // "Hello-World"
+train_case("hello world")      // "Hello-World"
+train_case("HelloWorld")       // "Hello-World"
+train_case("hello_world")      // "Hello-World"
 ```
 
-#### `capitalCase(text : String) -> String`
+#### `capital_case(text : String) -> String`
 
 Convert string to Capital Case.
 
 ```moonbit
-capitalCase("hello world")    // "Hello World"
-capitalCase("HelloWorld")     // "Hello World"
-capitalCase("hello_world")    // "Hello World"
+capital_case("hello world")    // "Hello World"
+capital_case("HelloWorld")     // "Hello World"
+capital_case("hello_world")    // "Hello World"
 ```
 
-#### `sentenceCase(text : String) -> String`
+#### `sentence_case(text : String) -> String`
 
 Convert string to Sentence case.
 
 ```moonbit
-sentenceCase("hello world")   // "Hello world"
-sentenceCase("HelloWorld")    // "Hello world"
-sentenceCase("hello_world")   // "Hello world"
+sentence_case("hello world")   // "Hello world"
+sentence_case("HelloWorld")    // "Hello world"
+sentence_case("hello_world")   // "Hello world"
 ```
 
-#### `noCase(text : String) -> String`
+#### `no_case(text : String) -> String`
 
 Convert string to no case (lowercase with spaces).
 
 ```moonbit
-noCase("hello world")         // "hello world"
-noCase("HelloWorld")          // "hello world"
-noCase("hello_world")         // "hello world"
+no_case("hello world")         // "hello world"
+no_case("HelloWorld")          // "hello world"
+no_case("hello_world")         // "hello world"
 ```
 
 ### Special Transformations
 
-#### `swapCase(text : String) -> String`
+#### `swap_case(text : String) -> String`
 
 Swap the case of each character.
 
 ```moonbit
-swapCase("Hello World")       // "hELLO wORLD"
-swapCase("hELLO wORLD")       // "Hello World"
-swapCase("CamelCase")         // "cAMELcASE"
+swap_case("Hello World")       // "hELLO wORLD"
+swap_case("hELLO wORLD")       // "Hello World"
+swap_case("CamelCase")         // "cAMELcASE"
 ```
 
-#### `spongeCase(text : String) -> String`
+#### `sponge_case(text : String) -> String`
 
 Convert to alternating case (SpongeBob mocking meme style).
 
 ```moonbit
-spongeCase("hello world")     // "hElLo WoRlD"
-spongeCase("test string")     // "tEsT sTrInG"
+sponge_case("hello world")     // "hElLo WoRlD"
+sponge_case("test string")     // "tEsT sTrInG"
 ```
 
-#### `titleCase(text : String) -> String`
+#### `title_case(text : String) -> String`
 
 Convert to proper title case with English grammar rules.
 
 ```moonbit
-titleCase("the lord of the rings")  // "The Lord of the Rings"
-titleCase("to be or not to be")      // "To Be or Not to Be"
-titleCase("war and peace")           // "War and Peace"
+title_case("the lord of the rings")  // "The Lord of the Rings"
+title_case("to be or not to be")      // "To Be or Not to Be"
+title_case("war and peace")           // "War and Peace"
 ```
 
-#### `alternatingCase(text : String) -> String`
+#### `alternating_case(text : String) -> String`
 
 Alternate between lowercase and uppercase for each letter.
 
 ```moonbit
-alternatingCase("hello")      // "hElLo"
-alternatingCase("hello world") // "hElLo WoRlD"
+alternating_case("hello")      // "hElLo"
+alternating_case("hello world") // "hElLo WoRlD"
 ```
 
-#### `reverseCase(text : String) -> String`
+#### `reverse_case(text : String) -> String`
 
 Reverse the order of characters in the string.
 
 ```moonbit
-reverseCase("hello")          // "olleh"
-reverseCase("hello world")    // "dlrow olleh"
-reverseCase("MoonBit")        // "tibnooM"
+reverse_case("hello")          // "olleh"
+reverse_case("hello world")    // "dlrow olleh"
+reverse_case("MoonBit")        // "tibnooM"
 ```
 
 ### Utility Functions
@@ -237,22 +237,22 @@ capitalize("test")            // "Test"
 ```moonbit
 // Handle complex camelCase
 let complex = "XMLHttpRequestV2"
-snakeCase(complex)            // "xml_http_request_v_2"
-kebabCase(complex)            // "xml-http-request-v-2"
-constantCase(complex)         // "XML_HTTP_REQUEST_V_2"
+snake_case(complex)            // "xml_http_request_v_2"
+kebab_case(complex)            // "xml-http-request-v-2"
+constant_case(complex)         // "XML_HTTP_REQUEST_V_2"
 
 // Handle mixed separators
 let mixed = "hello-world_test.case"
-camelCase(mixed)              // "helloWorldTestCase"
-pascalCase(mixed)             // "HelloWorldTestCase"
+camel_case(mixed)              // "helloWorldTestCase"
+pascal_case(mixed)             // "HelloWorldTestCase"
 ```
 
 ### Round-trip Conversions
 
 ```moonbit
 let original = "HelloWorldExample"
-let snake = snakeCase(original)     // "hello_world_example"
-let backToPascal = pascalCase(snake) // "HelloWorldExample"
+let snake = snake_case(original)     // "hello_world_example"
+let backToPascal = pascal_case(snake) // "HelloWorldExample"
 // backToPascal == original
 ```
 
@@ -261,14 +261,14 @@ let backToPascal = pascalCase(snake) // "HelloWorldExample"
 ```moonbit
 // API endpoint conversion
 let apiEndpoint = "getUserProfile"
-kebabCase(apiEndpoint)        // "get-user-profile" (for URLs)
-snakeCase(apiEndpoint)        // "get_user_profile" (for database)
-constantCase(apiEndpoint)     // "GET_USER_PROFILE" (for constants)
+kebab_case(apiEndpoint)        // "get-user-profile" (for URLs)
+snake_case(apiEndpoint)        // "get_user_profile" (for database)
+constant_case(apiEndpoint)     // "GET_USER_PROFILE" (for constants)
 
 // Configuration keys
 let configKey = "databaseConnectionString"
-constantCase(configKey)       // "DATABASE_CONNECTION_STRING"
-dotCase(configKey)            // "database.connection.string"
+constant_case(configKey)       // "DATABASE_CONNECTION_STRING"
+dot_case(configKey)            // "database.connection.string"
 ```
 
 ## Testing

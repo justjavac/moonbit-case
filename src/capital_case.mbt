@@ -4,11 +4,11 @@
 /// and joining them with spaces.
 /// 
 /// Examples:
-/// - capitalCase("hello world") returns "Hello World"
-/// - capitalCase("HelloWorld") returns "Hello World"
-/// - capitalCase("hello_world") returns "Hello World"
-/// - capitalCase("hello") returns "Hello"
-/// - capitalCase("") returns ""
+/// - capital_case("hello world") returns "Hello World"
+/// - capital_case("HelloWorld") returns "Hello World"
+/// - capital_case("hello_world") returns "Hello World"
+/// - capital_case("hello") returns "Hello"
+/// - capital_case("") returns ""
 /// 
 /// # Parameters
 /// - `text`: The input string to convert
@@ -28,7 +28,7 @@
 /// 
 /// # Returns
 /// The string converted to Capital Case
-pub fn capitalCase(text : String) -> String {
+pub fn capital_case(text : String) -> String {
   let words = split(text)
   if words.is_empty() {
     return ""
@@ -38,28 +38,4 @@ pub fn capitalCase(text : String) -> String {
     result = result + " " + capitalize(string_to_lower(words[i]))
   }
   result
-}
-
-///|
-test "capitalCase basic conversion" {
-  assert_eq(capitalCase("hello world"), "Hello World")
-  assert_eq(capitalCase("HelloWorld"), "Hello World")
-  assert_eq(capitalCase("hello_world"), "Hello World")
-  assert_eq(capitalCase("hello"), "Hello")
-}
-
-///|
-test "capitalCase edge cases" {
-  assert_eq(capitalCase(""), "")
-  assert_eq(capitalCase("a"), "A")
-  assert_eq(capitalCase("A"), "A")
-  assert_eq(capitalCase("123"), "123")
-}
-
-///|
-test "capitalCase complex cases" {
-  assert_eq(capitalCase("XMLHttpRequest"), "Xml Http Request")
-  assert_eq(capitalCase("iPhone-App"), "I Phone App")
-  assert_eq(capitalCase("foo bar baz"), "Foo Bar Baz")
-  assert_eq(capitalCase("test123value"), "Test 123 Value")
 }

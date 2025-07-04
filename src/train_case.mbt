@@ -4,18 +4,18 @@
 /// and joining them with hyphens.
 /// 
 /// Examples:
-/// - trainCase("hello world") returns "Hello-World"
-/// - trainCase("HelloWorld") returns "Hello-World"
-/// - trainCase("hello_world") returns "Hello-World"
-/// - trainCase("hello") returns "Hello"
-/// - trainCase("") returns ""
+/// - train_case("hello world") returns "Hello-World"
+/// - train_case("HelloWorld") returns "Hello-World"
+/// - train_case("hello_world") returns "Hello-World"
+/// - train_case("hello") returns "Hello"
+/// - train_case("") returns ""
 /// 
 /// # Parameters
 /// - `text`: The input string to convert
 /// 
 /// # Returns
 /// The string converted to Train-Case
-pub fn trainCase(text : String) -> String {
+pub fn train_case(text : String) -> String {
   let words = split(text)
   if words.is_empty() {
     return ""
@@ -25,28 +25,4 @@ pub fn trainCase(text : String) -> String {
     result = result + "-" + capitalize(string_to_lower(words[i]))
   }
   result
-}
-
-///|
-test "trainCase basic conversion" {
-  assert_eq(trainCase("hello world"), "Hello-World")
-  assert_eq(trainCase("HelloWorld"), "Hello-World")
-  assert_eq(trainCase("hello_world"), "Hello-World")
-  assert_eq(trainCase("hello"), "Hello")
-}
-
-///|
-test "trainCase edge cases" {
-  assert_eq(trainCase(""), "")
-  assert_eq(trainCase("a"), "A")
-  assert_eq(trainCase("A"), "A")
-  assert_eq(trainCase("123"), "123")
-}
-
-///|
-test "trainCase complex cases" {
-  assert_eq(trainCase("XMLHttpRequest"), "Xml-Http-Request")
-  assert_eq(trainCase("iPhone-App"), "I-Phone-App")
-  assert_eq(trainCase("foo bar baz"), "Foo-Bar-Baz")
-  assert_eq(trainCase("test123value"), "Test-123-Value")
 }

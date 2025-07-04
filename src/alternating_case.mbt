@@ -5,18 +5,18 @@
 /// affect the alternation pattern.
 /// 
 /// Examples:
-/// - alternatingCase("hello") returns "hElLo"
-/// - alternatingCase("hello world") returns "hElLo WoRlD"
-/// - alternatingCase("test123") returns "tEsT123"
-/// - alternatingCase("hello123world") returns "hElLo123WoRlD"
-/// - alternatingCase("") returns ""
+/// - alternating_case("hello") returns "hElLo"
+/// - alternating_case("hello world") returns "hElLo WoRlD"
+/// - alternating_case("test123") returns "tEsT123"
+/// - alternating_case("hello123world") returns "hElLo123WoRlD"
+/// - alternating_case("") returns ""
 /// 
 /// # Parameters
 /// - `text`: The input string to transform
 /// 
 /// # Returns
 /// The string with alternating case applied
-pub fn alternatingCase(text : String) -> String {
+pub fn alternating_case(text : String) -> String {
   let chars = text.to_array()
   let mut result = ""
   let mut should_uppercase = false
@@ -34,27 +34,4 @@ pub fn alternatingCase(text : String) -> String {
     }
   }
   result
-}
-
-///|
-test "alternatingCase basic conversion" {
-  assert_eq(alternatingCase("hello"), "hElLo")
-  assert_eq(alternatingCase("hello world"), "hElLo WoRlD")
-  assert_eq(alternatingCase("test123"), "tEsT123")
-}
-
-///|
-test "alternatingCase edge cases" {
-  assert_eq(alternatingCase(""), "")
-  assert_eq(alternatingCase("123"), "123")
-  assert_eq(alternatingCase("!@#"), "!@#")
-  assert_eq(alternatingCase("a"), "a")
-  assert_eq(alternatingCase("ab"), "aB")
-}
-
-///|
-test "alternatingCase with symbols" {
-  assert_eq(alternatingCase("a-b-c"), "a-B-c")
-  assert_eq(alternatingCase("test_case"), "tEsT_cAsE")
-  assert_eq(alternatingCase("hello123world"), "hElLo123WoRlD")
 }

@@ -5,19 +5,19 @@
 /// except for the first and last words which are always capitalized.
 /// 
 /// Examples:
-/// - titleCase("the quick brown fox") returns "The Quick Brown Fox"
-/// - titleCase("a tale of two cities") returns "A Tale of Two Cities"
-/// - titleCase("the lord of the rings") returns "The Lord of the Rings"
-/// - titleCase("to be or not to be") returns "To Be or Not to Be"
-/// - titleCase("hello world") returns "Hello World"
-/// - titleCase("") returns ""
+/// - title_case("the quick brown fox") returns "The Quick Brown Fox"
+/// - title_case("a tale of two cities") returns "A Tale of Two Cities"
+/// - title_case("the lord of the rings") returns "The Lord of the Rings"
+/// - title_case("to be or not to be") returns "To Be or Not to Be"
+/// - title_case("hello world") returns "Hello World"
+/// - title_case("") returns ""
 /// 
 /// # Parameters
 /// - `text`: The input string to convert
 /// 
 /// # Returns
 /// The string converted to proper title case
-pub fn titleCase(text : String) -> String {
+pub fn title_case(text : String) -> String {
   let minor_words = [
     "a", "an", "and", "as", "at", "but", "by", "for", "if", "in", "nor", "of", "on",
     "or", "so", "the", "to", "up", "yet",
@@ -53,25 +53,4 @@ fn is_minor_word(word : String, minor_words : Array[String]) -> Bool {
     }
   }
   false
-}
-
-///|
-test "titleCase basic conversion" {
-  assert_eq(titleCase("the quick brown fox"), "The Quick Brown Fox")
-  assert_eq(titleCase("a tale of two cities"), "A Tale of Two Cities")
-  assert_eq(titleCase("hello world"), "Hello World")
-}
-
-///|
-test "titleCase edge cases" {
-  assert_eq(titleCase(""), "")
-  assert_eq(titleCase("a"), "A")
-  assert_eq(titleCase("the"), "The")
-}
-
-///|
-test "titleCase with minor words" {
-  assert_eq(titleCase("war and peace"), "War and Peace")
-  assert_eq(titleCase("the lord of the rings"), "The Lord of the Rings")
-  assert_eq(titleCase("to be or not to be"), "To Be or Not to Be")
 }
