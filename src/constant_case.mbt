@@ -3,30 +3,30 @@
 /// Transforms the input string to CONSTANT_CASE by converting all words to uppercase
 /// and joining them with underscores.
 /// 
-/// # Examples
-/// 
-/// ```moonbit
-/// let str = constant_case("hello world")
-/// assert_eq(str, "HELLO_WORLD")
-/// 
-/// let str = constant_case("HelloWorld")
-/// assert_eq(str, "HELLO_WORLD")
-///
-/// let str = constant_case("hello-world")
-/// assert_eq(str, "HELLO_WORLD")
-///
-/// let str = constant_case("hello")
-/// assert_eq(str, "HELLO")
-///
-/// let str = constant_case("")
-/// assert_eq(str, "")
-/// ```
-///
 /// # Parameters
 /// - `text`: The input string to convert
 /// 
 /// # Returns
 /// The string converted to CONSTANT_CASE
+/// 
+/// # Examples
+/// 
+/// ```moonbit
+/// let str = @case.constant_case("hello world")
+/// assert_eq(str, "HELLO_WORLD")
+/// 
+/// let str = @case.constant_case("HelloWorld")
+/// assert_eq(str, "HELLO_WORLD")
+///
+/// let str = @case.constant_case("hello-world")
+/// assert_eq(str, "HELLO_WORLD")
+///
+/// let str = @case.constant_case("hello")
+/// assert_eq(str, "HELLO")
+///
+/// let str = @case.constant_case("")
+/// assert_eq(str, "")
+/// ```
 pub fn constant_case(text : String) -> String {
   let words = split(text)
   if words.is_empty() {

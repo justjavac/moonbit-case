@@ -3,30 +3,30 @@
 /// Transforms the input string to snake_case by converting all words to lowercase
 /// and joining them with underscores.
 /// 
-/// # Examples
-/// 
-/// ```moonbit
-/// let str = snake_case("hello world")
-/// assert_eq(str, "hello_world")
-/// 
-/// let str = snake_case("HelloWorld")
-/// assert_eq(str, "hello_world")
-///
-/// let str = snake_case("hello-world")
-/// assert_eq(str, "hello_world")
-///
-/// let str = snake_case("hello")
-/// assert_eq(str, "hello")
-///
-/// let str = snake_case("")
-/// assert_eq(str, "")
-/// ```
-///
 /// # Parameters
 /// - `text`: The input string to convert
 /// 
 /// # Returns
 /// The string converted to snake_case
+/// 
+/// # Examples
+/// 
+/// ```moonbit
+/// let str = @case.snake_case("hello world")
+/// assert_eq(str, "hello_world")
+/// 
+/// let str = @case.snake_case("HelloWorld")
+/// assert_eq(str, "hello_world")
+///
+/// let str = @case.snake_case("hello-world")
+/// assert_eq(str, "hello_world")
+///
+/// let str = @case.snake_case("hello")
+/// assert_eq(str, "hello")
+///
+/// let str = @case.snake_case("")
+/// assert_eq(str, "")
+/// ```
 pub fn snake_case(text : String) -> String {
   let words = split(text)
   if words.is_empty() {

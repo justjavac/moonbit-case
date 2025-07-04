@@ -3,30 +3,30 @@
 /// Transforms the input string to path/case by converting all words to lowercase
 /// and joining them with forward slashes.
 /// 
-/// # Examples
-/// 
-/// ```moonbit
-/// let str = path_case("hello world")
-/// assert_eq(str, "hello/world")
-/// 
-/// let str = path_case("HelloWorld")
-/// assert_eq(str, "hello/world")
-///
-/// let str = path_case("hello_world")
-/// assert_eq(str, "hello/world")
-///
-/// let str = path_case("hello")
-/// assert_eq(str, "hello")
-///
-/// let str = path_case("")
-/// assert_eq(str, "")
-/// ```
-///
 /// # Parameters
 /// - `text`: The input string to convert
 /// 
 /// # Returns
 /// The string converted to path/case
+/// 
+/// # Examples
+/// 
+/// ```moonbit
+/// let str = @case.path_case("hello world")
+/// assert_eq(str, "hello/world")
+/// 
+/// let str = @case.path_case("HelloWorld")
+/// assert_eq(str, "hello/world")
+///
+/// let str = @case.path_case("hello_world")
+/// assert_eq(str, "hello/world")
+///
+/// let str = @case.path_case("hello")
+/// assert_eq(str, "hello")
+///
+/// let str = @case.path_case("")
+/// assert_eq(str, "")
+/// ```
 pub fn path_case(text : String) -> String {
   let words = split(text)
   if words.is_empty() {

@@ -3,30 +3,30 @@
 /// Transforms the input string by converting uppercase letters to lowercase
 /// and lowercase letters to uppercase, while leaving non-alphabetic characters unchanged.
 /// 
-/// # Examples
-/// 
-/// ```moonbit
-/// let str = swap_case("Hello World")
-/// assert_eq(str, "hELLO wORLD")
-/// 
-/// let str = swap_case("hELLO wORLD")
-/// assert_eq(str, "Hello World")
-///
-/// let str = swap_case("Test123")
-/// assert_eq(str, "tEST123")
-///
-/// let str = swap_case("hello")
-/// assert_eq(str, "HELLO")
-///
-/// let str = swap_case("")
-/// assert_eq(str, "")
-/// ```
-///
 /// # Parameters
 /// - `text`: The input string to transform
 /// 
 /// # Returns
 /// The string with case swapped
+/// 
+/// # Examples
+/// 
+/// ```moonbit
+/// let str = @case.swap_case("Hello World")
+/// assert_eq(str, "hELLO wORLD")
+/// 
+/// let str = @case.swap_case("hELLO wORLD")
+/// assert_eq(str, "Hello World")
+///
+/// let str = @case.swap_case("Test123")
+/// assert_eq(str, "tEST123")
+///
+/// let str = @case.swap_case("hello")
+/// assert_eq(str, "HELLO")
+///
+/// let str = @case.swap_case("")
+/// assert_eq(str, "")
+/// ```
 pub fn swap_case(text : String) -> String {
   let chars = text.to_array()
   let mut result = ""

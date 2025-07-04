@@ -3,30 +3,30 @@
 /// Transforms the input string to PascalCase by capitalizing the first letter of each word
 /// and joining them together without separators.
 /// 
-/// # Examples
-/// 
-/// ```moonbit
-/// let str = pascal_case("hello world")
-/// assert_eq(str, "HelloWorld")
-/// 
-/// let str = pascal_case("hello-world")
-/// assert_eq(str, "HelloWorld")
-///
-/// let str = pascal_case("HELLO_WORLD")
-/// assert_eq(str, "HelloWorld")
-///
-/// let str = pascal_case("hello")
-/// assert_eq(str, "Hello")
-///
-/// let str = pascal_case("")
-/// assert_eq(str, "")
-/// ```
-///
 /// # Parameters
 /// - `text`: The input string to convert
 /// 
 /// # Returns
 /// The string converted to PascalCase
+/// 
+/// # Examples
+/// 
+/// ```moonbit
+/// let str = @case.pascal_case("hello world")
+/// assert_eq(str, "HelloWorld")
+/// 
+/// let str = @case.pascal_case("hello-world")
+/// assert_eq(str, "HelloWorld")
+///
+/// let str = @case.pascal_case("HELLO_WORLD")
+/// assert_eq(str, "HelloWorld")
+///
+/// let str = @case.pascal_case("hello")
+/// assert_eq(str, "Hello")
+///
+/// let str = @case.pascal_case("")
+/// assert_eq(str, "")
+/// ```
 pub fn pascal_case(text : String) -> String {
   let words = split(text)
   if words.is_empty() {

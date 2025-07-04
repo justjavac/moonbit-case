@@ -4,32 +4,33 @@
 /// while keeping minor words (articles, prepositions, conjunctions) lowercase,
 /// except for the first and last words which are always capitalized.
 /// 
-/// # Examples
-/// 
-/// ```moonbit
-/// let str = title_case("the quick brown fox")
-/// assert_eq(str, "The Quick Brown Fox")
-/// 
-/// let str = title_case("a tale of two cities")
-/// assert_eq(str, "A Tale of Two Cities")
-///
-/// let str = title_case("the lord of the rings")
-/// assert_eq(str, "The Lord of the Rings")
-///
-/// let str = title_case("to be or not to be")
-/// assert_eq(str, "To Be or Not to Be")
-///
-/// let str = title_case("hello world")
-/// assert_eq(str, "Hello World")
-///
-/// let str = title_case("")
-/// assert_eq(str, "")
-/// ```
-///
 /// # Parameters
 /// - `text`: The input string to convert
 /// 
 /// # Returns
+/// The string converted to proper title case
+/// 
+/// # Examples
+/// 
+/// ```moonbit
+/// let str = @case.title_case("the quick brown fox")
+/// assert_eq(str, "The Quick Brown Fox")
+/// 
+/// let str = @case.title_case("a tale of two cities")
+/// assert_eq(str, "A Tale of Two Cities")
+///
+/// let str = @case.title_case("the lord of the rings")
+/// assert_eq(str, "The Lord of the Rings")
+///
+/// let str = @case.title_case("to be or not to be")
+/// assert_eq(str, "To Be or Not to Be")
+///
+/// let str = @case.title_case("hello world")
+/// assert_eq(str, "Hello World")
+///
+/// let str = @case.title_case("")
+/// assert_eq(str, "")
+/// ```
 /// The string converted to proper title case
 pub fn title_case(text : String) -> String {
   let minor_words = [

@@ -3,30 +3,30 @@
 /// Transforms the input string to Sentence case by capitalizing only the first letter
 /// of the first word and joining all words with spaces.
 /// 
-/// # Examples
-/// 
-/// ```moonbit
-/// let str = sentence_case("hello world")
-/// assert_eq(str, "Hello world")
-/// 
-/// let str = sentence_case("HelloWorld")
-/// assert_eq(str, "Hello world")
-///
-/// let str = sentence_case("hello_world")
-/// assert_eq(str, "Hello world")
-///
-/// let str = sentence_case("hello")
-/// assert_eq(str, "Hello")
-///
-/// let str = sentence_case("")
-/// assert_eq(str, "")
-/// ```
-///
 /// # Parameters
 /// - `text`: The input string to convert
 /// 
 /// # Returns
 /// The string converted to Sentence case
+/// 
+/// # Examples
+/// 
+/// ```moonbit
+/// let str = @case.sentence_case("hello world")
+/// assert_eq(str, "Hello world")
+/// 
+/// let str = @case.sentence_case("HelloWorld")
+/// assert_eq(str, "Hello world")
+///
+/// let str = @case.sentence_case("hello_world")
+/// assert_eq(str, "Hello world")
+///
+/// let str = @case.sentence_case("hello")
+/// assert_eq(str, "Hello")
+///
+/// let str = @case.sentence_case("")
+/// assert_eq(str, "")
+/// ```
 pub fn sentence_case(text : String) -> String {
   let words = split(text)
   if words.is_empty() {
