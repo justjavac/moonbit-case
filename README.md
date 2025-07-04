@@ -1,7 +1,5 @@
 # moonbit-case
 
-[![CI](https://github.com/justjavac/moonbit-case/actions/workflows/ci.yml/badge.svg)](https://github.com/justjavac/moonbit-case/actions/workflows/ci.yml)
-
 Transform strings between different cases: `camelCase`, `PascalCase`, `snake_case`, `kebab-case`, `CONSTANT_CASE`, and many more.
 
 ## Installation
