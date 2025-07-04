@@ -4,13 +4,25 @@
 /// for each letter. Non-alphabetic characters are preserved as-is and don't
 /// affect the alternation pattern.
 /// 
-/// Examples:
-/// - alternating_case("hello") returns "hElLo"
-/// - alternating_case("hello world") returns "hElLo WoRlD"
-/// - alternating_case("test123") returns "tEsT123"
-/// - alternating_case("hello123world") returns "hElLo123WoRlD"
-/// - alternating_case("") returns ""
+/// # Examples
 /// 
+/// ```moonbit
+/// let str = alternating_case("hello")
+/// assert_eq(str, "hElLo")
+/// 
+/// let str = alternating_case("hello world")
+/// assert_eq(str, "hElLo WoRlD")
+///
+/// let str = alternating_case("test123")
+/// assert_eq(str, "tEsT123")
+///
+/// let str = alternating_case("hello123world")
+/// assert_eq(str, "hElLo123WoRlD")
+///
+/// let str = alternating_case("")
+/// assert_eq(str, "")
+/// ```
+///
 /// # Parameters
 /// - `text`: The input string to transform
 /// 

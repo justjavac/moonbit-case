@@ -3,13 +3,25 @@
 /// Transforms the input string to kebab-case by converting all words to lowercase
 /// and joining them with hyphens.
 /// 
-/// Examples:
-/// - kebab_case("hello world") returns "hello-world"
-/// - kebab_case("HelloWorld") returns "hello-world"
-/// - kebab_case("hello_world") returns "hello-world"
-/// - kebab_case("hello") returns "hello"
-/// - kebab_case("") returns ""
+/// # Examples
 /// 
+/// ```moonbit
+/// let str = kebab_case("hello world")
+/// assert_eq(str, "hello-world")
+/// 
+/// let str = kebab_case("HelloWorld")
+/// assert_eq(str, "hello-world")
+///
+/// let str = kebab_case("hello_world")
+/// assert_eq(str, "hello-world")
+///
+/// let str = kebab_case("hello")
+/// assert_eq(str, "hello")
+///
+/// let str = kebab_case("")
+/// assert_eq(str, "")
+/// ```
+///
 /// # Parameters
 /// - `text`: The input string to convert
 /// 

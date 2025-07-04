@@ -4,14 +4,28 @@
 /// while keeping minor words (articles, prepositions, conjunctions) lowercase,
 /// except for the first and last words which are always capitalized.
 /// 
-/// Examples:
-/// - title_case("the quick brown fox") returns "The Quick Brown Fox"
-/// - title_case("a tale of two cities") returns "A Tale of Two Cities"
-/// - title_case("the lord of the rings") returns "The Lord of the Rings"
-/// - title_case("to be or not to be") returns "To Be or Not to Be"
-/// - title_case("hello world") returns "Hello World"
-/// - title_case("") returns ""
+/// # Examples
 /// 
+/// ```moonbit
+/// let str = title_case("the quick brown fox")
+/// assert_eq(str, "The Quick Brown Fox")
+/// 
+/// let str = title_case("a tale of two cities")
+/// assert_eq(str, "A Tale of Two Cities")
+///
+/// let str = title_case("the lord of the rings")
+/// assert_eq(str, "The Lord of the Rings")
+///
+/// let str = title_case("to be or not to be")
+/// assert_eq(str, "To Be or Not to Be")
+///
+/// let str = title_case("hello world")
+/// assert_eq(str, "Hello World")
+///
+/// let str = title_case("")
+/// assert_eq(str, "")
+/// ```
+///
 /// # Parameters
 /// - `text`: The input string to convert
 /// 

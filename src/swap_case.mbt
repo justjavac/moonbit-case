@@ -3,13 +3,25 @@
 /// Transforms the input string by converting uppercase letters to lowercase
 /// and lowercase letters to uppercase, while leaving non-alphabetic characters unchanged.
 /// 
-/// Examples:
-/// - swap_case("Hello World") returns "hELLO wORLD"
-/// - swap_case("hELLO wORLD") returns "Hello World"
-/// - swap_case("Test123") returns "tEST123"
-/// - swap_case("hello") returns "HELLO"
-/// - swap_case("") returns ""
+/// # Examples
 /// 
+/// ```moonbit
+/// let str = swap_case("Hello World")
+/// assert_eq(str, "hELLO wORLD")
+/// 
+/// let str = swap_case("hELLO wORLD")
+/// assert_eq(str, "Hello World")
+///
+/// let str = swap_case("Test123")
+/// assert_eq(str, "tEST123")
+///
+/// let str = swap_case("hello")
+/// assert_eq(str, "HELLO")
+///
+/// let str = swap_case("")
+/// assert_eq(str, "")
+/// ```
+///
 /// # Parameters
 /// - `text`: The input string to transform
 /// 

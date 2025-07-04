@@ -3,13 +3,25 @@
 /// Transforms the input string to Train-Case by capitalizing the first letter of each word
 /// and joining them with hyphens.
 /// 
-/// Examples:
-/// - train_case("hello world") returns "Hello-World"
-/// - train_case("HelloWorld") returns "Hello-World"
-/// - train_case("hello_world") returns "Hello-World"
-/// - train_case("hello") returns "Hello"
-/// - train_case("") returns ""
+/// # Examples
 /// 
+/// ```moonbit
+/// let str = train_case("hello world")
+/// assert_eq(str, "Hello-World")
+/// 
+/// let str = train_case("HelloWorld")
+/// assert_eq(str, "Hello-World")
+///
+/// let str = train_case("hello_world")
+/// assert_eq(str, "Hello-World")
+///
+/// let str = train_case("hello")
+/// assert_eq(str, "Hello")
+///
+/// let str = train_case("")
+/// assert_eq(str, "")
+/// ```
+///
 /// # Parameters
 /// - `text`: The input string to convert
 /// 

@@ -3,13 +3,25 @@
 /// Transforms the input string to CONSTANT_CASE by converting all words to uppercase
 /// and joining them with underscores.
 /// 
-/// Examples:
-/// - constant_case("hello world") returns "HELLO_WORLD"
-/// - constant_case("HelloWorld") returns "HELLO_WORLD"
-/// - constant_case("hello-world") returns "HELLO_WORLD"
-/// - constant_case("hello") returns "HELLO"
-/// - constant_case("") returns ""
+/// # Examples
 /// 
+/// ```moonbit
+/// let str = constant_case("hello world")
+/// assert_eq(str, "HELLO_WORLD")
+/// 
+/// let str = constant_case("HelloWorld")
+/// assert_eq(str, "HELLO_WORLD")
+///
+/// let str = constant_case("hello-world")
+/// assert_eq(str, "HELLO_WORLD")
+///
+/// let str = constant_case("hello")
+/// assert_eq(str, "HELLO")
+///
+/// let str = constant_case("")
+/// assert_eq(str, "")
+/// ```
+///
 /// # Parameters
 /// - `text`: The input string to convert
 /// 

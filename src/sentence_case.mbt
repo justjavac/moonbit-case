@@ -3,26 +3,25 @@
 /// Transforms the input string to Sentence case by capitalizing only the first letter
 /// of the first word and joining all words with spaces.
 /// 
-/// Examples:
-/// - sentence_case("hello world") returns "Hello world"
-/// - sentence_case("HelloWorld") returns "Hello world"
-/// - sentence_case("hello_world") returns "Hello world"
-/// - sentence_case("hello") returns "Hello"
-/// - sentence_case("") returns ""
-/// 
-/// # Parameters
-/// - `text`: The input string to convert
-/// 
-/// # Returns
-/// The string converted to Sentence caseo Sentence case.
-/// 
-/// Transforms the input string to Sentence case by capitalizing only the first word
-/// and keeping the rest in lowercase, joined with spaces.
-/// 
 /// # Examples
-/// - Additional test case: sentenceCase("hello world") returns "Hello world"
-/// - Another example: sentenceCase("HelloWorld") returns "Hello world"
 /// 
+/// ```moonbit
+/// let str = sentence_case("hello world")
+/// assert_eq(str, "Hello world")
+/// 
+/// let str = sentence_case("HelloWorld")
+/// assert_eq(str, "Hello world")
+///
+/// let str = sentence_case("hello_world")
+/// assert_eq(str, "Hello world")
+///
+/// let str = sentence_case("hello")
+/// assert_eq(str, "Hello")
+///
+/// let str = sentence_case("")
+/// assert_eq(str, "")
+/// ```
+///
 /// # Parameters
 /// - `text`: The input string to convert
 /// 

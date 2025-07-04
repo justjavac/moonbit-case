@@ -3,13 +3,25 @@
 /// Transforms the input string to camelCase by converting the first word to lowercase
 /// and capitalizing the first letter of subsequent words, then joining them together.
 /// 
-/// Examples:
-/// - camel_case("hello world") returns "helloWorld"
-/// - camel_case("Hello-World") returns "helloWorld"  
-/// - camel_case("HELLO_WORLD") returns "helloWorld"
-/// - camel_case("hello") returns "hello"
-/// - camel_case("") returns ""
+/// # Examples
 /// 
+/// ```moonbit
+/// let str = camel_case("hello world")
+/// assert_eq(str, "helloWorld")
+/// 
+/// let str = camel_case("Hello-World")
+/// assert_eq(str, "helloWorld")
+///
+/// let str = camel_case("HELLO_WORLD")
+/// assert_eq(str, "helloWorld")
+///
+/// let str = camel_case("hello")
+/// assert_eq(str, "hello")
+///
+/// let str = camel_case("")
+/// assert_eq(str, "")
+/// ```
+///
 /// # Parameters
 /// - `text`: The input string to convert
 /// 

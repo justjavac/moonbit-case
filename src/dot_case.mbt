@@ -3,13 +3,25 @@
 /// Transforms the input string to dot.case by converting all words to lowercase
 /// and joining them with periods.
 /// 
-/// Examples:
-/// - dot_case("hello world") returns "hello.world"
-/// - dot_case("HelloWorld") returns "hello.world"
-/// - dot_case("hello_world") returns "hello.world"
-/// - dot_case("hello") returns "hello"
-/// - dot_case("") returns ""
+/// # Examples
 /// 
+/// ```moonbit
+/// let str = dot_case("hello world")
+/// assert_eq(str, "hello.world")
+/// 
+/// let str = dot_case("HelloWorld")
+/// assert_eq(str, "hello.world")
+///
+/// let str = dot_case("hello_world")
+/// assert_eq(str, "hello.world")
+///
+/// let str = dot_case("hello")
+/// assert_eq(str, "hello")
+///
+/// let str = dot_case("")
+/// assert_eq(str, "")
+/// ```
+///
 /// # Parameters
 /// - `text`: The input string to convert
 /// 

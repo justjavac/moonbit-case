@@ -4,13 +4,25 @@
 /// and uppercase for each letter, mimicking the "mocking SpongeBob" meme format.
 /// Non-alphabetic characters are preserved as-is and don't affect the alternation.
 /// 
-/// Examples:
-/// - sponge_case("hello world") returns "hElLo WoRlD"
-/// - sponge_case("test string") returns "tEsT sTrInG"
-/// - sponge_case("hello") returns "hElLo"
-/// - sponge_case("test123value") returns "tEsT123vAlUe"
-/// - sponge_case("") returns ""
+/// # Examples
 /// 
+/// ```moonbit
+/// let str = sponge_case("hello world")
+/// assert_eq(str, "hElLo WoRlD")
+/// 
+/// let str = sponge_case("test string")
+/// assert_eq(str, "tEsT sTrInG")
+///
+/// let str = sponge_case("hello")
+/// assert_eq(str, "hElLo")
+///
+/// let str = sponge_case("test123value")
+/// assert_eq(str, "tEsT123vAlUe")
+///
+/// let str = sponge_case("")
+/// assert_eq(str, "")
+/// ```
+///
 /// # Parameters
 /// - `text`: The input string to transform
 /// 
