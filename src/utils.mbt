@@ -20,7 +20,7 @@
 /// 
 /// # Returns
 /// An array of words extracted from the input string
-pub fn split(text : String) -> Array[String] {
+fn split(text : String) -> Array[String] {
   if text.is_empty() {
     return []
   }
@@ -172,7 +172,7 @@ fn to_lowercase(char : Char) -> Char {
 /// 
 /// # Returns
 /// The string with all letters converted to uppercase
-pub fn string_to_upper(text : String) -> String {
+fn string_to_upper(text : String) -> String {
   let chars = text.to_array()
   let mut result = ""
   for i = 0; i < chars.length(); i = i + 1 {
@@ -197,7 +197,7 @@ pub fn string_to_upper(text : String) -> String {
 /// 
 /// # Returns
 /// The string with all letters converted to lowercase
-pub fn string_to_lower(text : String) -> String {
+fn string_to_lower(text : String) -> String {
   let chars = text.to_array()
   let mut result = ""
   for i = 0; i < chars.length(); i = i + 1 {
@@ -223,7 +223,7 @@ pub fn string_to_lower(text : String) -> String {
 /// 
 /// # Returns
 /// The string with the first character capitalized
-pub fn capitalize(text : String) -> String {
+fn capitalize(text : String) -> String {
   if text.is_empty() {
     text
   } else {
