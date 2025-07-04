@@ -1,0 +1,49 @@
+package "justjavac/case"
+
+// Values
+fn alternating_case(String) -> String
+
+fn camel_case(String) -> String
+
+fn capital_case(String) -> String
+
+fn capitalize(String) -> String
+
+fn constant_case(String) -> String
+
+fn dot_case(String) -> String
+
+fn kebab_case(String) -> String
+
+fn no_case(String) -> String
+
+fn pascal_case(String) -> String
+
+fn path_case(String) -> String
+
+fn reverse_case(String) -> String
+
+fn sentence_case(String) -> String
+
+fn snake_case(String) -> String
+
+fn split(String) -> Array[String]
+
+fn sponge_case(String) -> String
+
+fn string_to_lower(String) -> String
+
+fn string_to_upper(String) -> String
+
+fn swap_case(String) -> String
+
+fn title_case(String) -> String
+
+fn train_case(String) -> String
+
+// Types and methods
+
+// Type aliases
+
+// Traits
+
