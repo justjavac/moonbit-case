@@ -9,7 +9,7 @@
 /// # Returns
 /// The string with case swapped
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.swap_case("Hello World")

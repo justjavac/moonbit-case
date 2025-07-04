@@ -9,7 +9,7 @@
 /// # Returns
 /// The string converted to kebab-case
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.kebab_case("hello world")

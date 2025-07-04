@@ -9,7 +9,7 @@
 /// # Returns
 /// The string converted to CONSTANT_CASE
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.constant_case("hello world")

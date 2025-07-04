@@ -9,7 +9,7 @@
 /// # Returns
 /// The string converted to no case
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.no_case("hello world")

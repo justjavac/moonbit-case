@@ -9,7 +9,7 @@
 /// # Returns
 /// The string with characters in reverse order
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.reverse_case("hello")

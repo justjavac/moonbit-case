@@ -9,7 +9,7 @@
 /// # Returns
 /// The string converted to dot.case
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.dot_case("hello world")

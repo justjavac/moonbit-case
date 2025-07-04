@@ -9,7 +9,7 @@
 /// # Returns
 /// The string converted to path/case
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.path_case("hello world")

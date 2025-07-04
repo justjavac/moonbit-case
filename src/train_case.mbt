@@ -9,7 +9,7 @@
 /// # Returns
 /// The string converted to Train-Case
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.train_case("hello world")

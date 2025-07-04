@@ -10,7 +10,7 @@
 /// # Returns
 /// The string converted to proper title case
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.title_case("the quick brown fox")

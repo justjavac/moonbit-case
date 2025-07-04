@@ -9,7 +9,7 @@
 /// # Returns
 /// The string converted to camelCase
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.camel_case("hello world")

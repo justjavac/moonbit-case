@@ -9,7 +9,7 @@
 /// # Returns
 /// The string converted to Capital Case
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.capital_case("hello world")

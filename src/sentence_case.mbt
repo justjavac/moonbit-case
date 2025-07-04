@@ -9,7 +9,7 @@
 /// # Returns
 /// The string converted to Sentence case
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.sentence_case("hello world")

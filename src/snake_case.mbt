@@ -9,7 +9,7 @@
 /// # Returns
 /// The string converted to snake_case
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.snake_case("hello world")

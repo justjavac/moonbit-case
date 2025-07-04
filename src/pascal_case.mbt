@@ -9,7 +9,7 @@
 /// # Returns
 /// The string converted to PascalCase
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.pascal_case("hello world")

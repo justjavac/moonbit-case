@@ -10,7 +10,7 @@
 /// # Returns
 /// The string with alternating case applied
 /// 
-/// # Examples
+/// # Example
 /// 
 /// ```moonbit
 /// let str = @case.alternating_case("hello")
