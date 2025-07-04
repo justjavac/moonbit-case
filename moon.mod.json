@@ -1,0 +1,19 @@
+{
+  "name": "justjavac/case",
+  "version": "0.1.0",
+  "readme": "README.md",
+  "repository": "https://github.com/justjavac/moonbit-case",
+  "license": "MIT",
+  "keywords": [
+    "case",
+    "string",
+    "camelCase",
+    "snake_case",
+    "kebab-case",
+    "PascalCase",
+    "conversion",
+    "utility"
+  ],
+  "description": "String case conversion utility for MoonBit",
+  "source": "src"
+}
