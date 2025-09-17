@@ -1,4 +1,5 @@
-///| Convert string to no case.
+///|
+/// Convert string to no case.
 /// 
 /// Transforms the input string to no case by converting all words to lowercase
 /// and joining them with spaces.

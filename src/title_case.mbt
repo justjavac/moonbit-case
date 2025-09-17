@@ -1,4 +1,5 @@
-///| Convert string to proper title case.
+///|
+/// Convert string to proper title case.
 /// 
 /// Transforms the input string to proper title case by capitalizing major words
 /// while keeping minor words (articles, prepositions, conjunctions) lowercase,

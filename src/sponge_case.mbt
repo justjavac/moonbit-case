@@ -1,4 +1,5 @@
-///| Convert string to spongeCase (alternating capitalization).
+///|
+/// Convert string to spongeCase (alternating capitalization).
 /// 
 /// Transforms the input string to spongeCase by alternating between lowercase
 /// and uppercase for each letter, mimicking the "mocking SpongeBob" meme format.

@@ -1,4 +1,5 @@
-///| Convert string to camelCase.
+///|
+/// Convert string to camelCase.
 /// 
 /// Transforms the input string to camelCase by converting the first word to lowercase
 /// and capitalizing the first letter of subsequent words, then joining them together.

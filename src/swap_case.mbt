@@ -1,4 +1,5 @@
-///| Swap the case of each character in the string.
+///|
+/// Swap the case of each character in the string.
 /// 
 /// Transforms the input string by converting uppercase letters to lowercase
 /// and lowercase letters to uppercase, while leaving non-alphabetic characters unchanged.

@@ -1,4 +1,5 @@
-///| Convert string to Sentence case.
+///|
+/// Convert string to Sentence case.
 /// 
 /// Transforms the input string to Sentence case by capitalizing only the first letter
 /// of the first word and joining all words with spaces.

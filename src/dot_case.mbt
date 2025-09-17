@@ -1,4 +1,5 @@
-///| Convert string to dot.case.
+///|
+/// Convert string to dot.case.
 /// 
 /// Transforms the input string to dot.case by converting all words to lowercase
 /// and joining them with periods.

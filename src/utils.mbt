@@ -1,6 +1,7 @@
 // Common utility functions for string case conversions
 
-///| Split a string into words by detecting case boundaries and separators.
+///|
+/// Split a string into words by detecting case boundaries and separators.
 /// 
 /// Analyzes the input string and splits it into individual words by detecting:
 /// - Case boundaries (camelCase, PascalCase)
@@ -67,7 +68,8 @@ fn split(text : String) -> Array[String] {
   words
 }
 
-///| Check if character is a word separator
+///|
+/// Check if character is a word separator
 fn is_separator(char : Char) -> Bool {
   match char {
     ' '
@@ -110,27 +112,32 @@ fn is_separator(char : Char) -> Bool {
   }
 }
 
-///| Check if character is uppercase letter
+///|
+/// Check if character is uppercase letter
 fn is_uppercase(char : Char) -> Bool {
   char >= 'A' && char <= 'Z'
 }
 
-///| Check if character is lowercase letter  
+///|
+/// Check if character is lowercase letter  
 fn is_lowercase(char : Char) -> Bool {
   char >= 'a' && char <= 'z'
 }
 
-///| Check if character is a letter
+///|
+/// Check if character is a letter
 fn is_letter(char : Char) -> Bool {
   is_uppercase(char) || is_lowercase(char)
 }
 
-///| Check if character is a digit
+///|
+/// Check if character is a digit
 fn is_digit(char : Char) -> Bool {
   char >= '0' && char <= '9'
 }
 
-///| Convert character to uppercase
+///|
+/// Convert character to uppercase
 fn to_uppercase(char : Char) -> Char {
   if is_lowercase(char) {
     (char.to_int() - 32) |> Int::unsafe_to_char
@@ -139,7 +146,8 @@ fn to_uppercase(char : Char) -> Char {
   }
 }
 
-///| Convert character to lowercase
+///|
+/// Convert character to lowercase
 fn to_lowercase(char : Char) -> Char {
   if is_uppercase(char) {
     (char.to_int() + 32) |> Int::unsafe_to_char
@@ -148,7 +156,8 @@ fn to_lowercase(char : Char) -> Char {
   }
 }
 
-///| Convert string to uppercase.
+///|
+/// Convert string to uppercase.
 /// 
 /// Transforms all lowercase letters in the string to uppercase,
 /// while leaving other characters unchanged.
@@ -167,7 +176,8 @@ fn string_to_upper(text : String) -> String {
   result
 }
 
-///| Convert string to lowercase.
+///|
+/// Convert string to lowercase.
 /// 
 /// Transforms all uppercase letters in the string to lowercase,
 /// while leaving other characters unchanged.
@@ -186,7 +196,8 @@ fn string_to_lower(text : String) -> String {
   result
 }
 
-///| Capitalize the first character of a string.
+///|
+/// Capitalize the first character of a string.
 /// 
 /// Transforms the first character of the string to uppercase,
 /// while leaving the rest of the string unchanged.
@@ -205,7 +216,7 @@ fn capitalize(text : String) -> String {
     if chars.length() == 1 {
       first
     } else {
-      first + text.substring(start=1)
+      first + (try? text[1:]).to_string()
     }
   }
 }

@@ -1,4 +1,5 @@
-///| Convert string to kebab-case (also known as param-case or dash-case).
+///|
+/// Convert string to kebab-case (also known as param-case or dash-case).
 /// 
 /// Transforms the input string to kebab-case by converting all words to lowercase
 /// and joining them with hyphens.

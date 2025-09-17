@@ -1,4 +1,5 @@
-///| Convert string to Train-Case (also known as HTTP-Header-Case).
+///|
+/// Convert string to Train-Case (also known as HTTP-Header-Case).
 /// 
 /// Transforms the input string to Train-Case by capitalizing the first letter of each word
 /// and joining them with hyphens.

@@ -1,4 +1,5 @@
-///| Convert string to CONSTANT_CASE (also known as SCREAMING_SNAKE_CASE).
+///|
+/// Convert string to CONSTANT_CASE (also known as SCREAMING_SNAKE_CASE).
 /// 
 /// Transforms the input string to CONSTANT_CASE by converting all words to uppercase
 /// and joining them with underscores.

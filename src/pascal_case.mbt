@@ -1,4 +1,5 @@
-///| Convert string to PascalCase (also known as UpperCamelCase).
+///|
+/// Convert string to PascalCase (also known as UpperCamelCase).
 /// 
 /// Transforms the input string to PascalCase by capitalizing the first letter of each word
 /// and joining them together without separators.

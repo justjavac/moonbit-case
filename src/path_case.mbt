@@ -1,4 +1,5 @@
-///| Convert string to path/case.
+///|
+/// Convert string to path/case.
 /// 
 /// Transforms the input string to path/case by converting all words to lowercase
 /// and joining them with forward slashes.

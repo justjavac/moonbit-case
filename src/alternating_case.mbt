@@ -1,4 +1,5 @@
-///| Convert string to alternating case.
+///|
+/// Convert string to alternating case.
 /// 
 /// Transforms the input string by alternating between lowercase and uppercase
 /// for each letter. Non-alphabetic characters are preserved as-is and don't

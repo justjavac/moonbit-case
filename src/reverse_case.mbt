@@ -1,4 +1,5 @@
-///| Reverse the order of characters in a string.
+///|
+/// Reverse the order of characters in a string.
 /// 
 /// Transforms the input string by reversing the order of all characters,
 /// effectively creating a mirror image of the original string.

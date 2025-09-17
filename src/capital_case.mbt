@@ -1,4 +1,5 @@
-///| Convert string to Capital Case (Title Case with spaces).
+///|
+/// Convert string to Capital Case (Title Case with spaces).
 /// 
 /// Transforms the input string to Capital Case by capitalizing the first letter of each word
 /// and joining them with spaces.

@@ -1,4 +1,5 @@
-///| Convert string to snake_case.
+///|
+/// Convert string to snake_case.
 /// 
 /// Transforms the input string to snake_case by converting all words to lowercase
 /// and joining them with underscores.
