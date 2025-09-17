@@ -216,7 +216,12 @@ fn capitalize(text : String) -> String {
     if chars.length() == 1 {
       first
     } else {
-      first + (try? text[1:]).to_string()
+      // Build the rest of the string from characters
+      let mut rest = ""
+      for i = 1; i < chars.length(); i = i + 1 {
+        rest = rest + chars[i].to_string()
+      }
+      first + rest
     }
   }
 }
