@@ -15,7 +15,7 @@
 /// ```moonbit
 /// let str = @case.kebab_case("hello world")
 /// assert_eq(str, "hello-world")
-/// 
+///
 /// let str = @case.kebab_case("HelloWorld")
 /// assert_eq(str, "hello-world")
 ///

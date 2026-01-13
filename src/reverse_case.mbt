@@ -15,7 +15,7 @@
 /// ```moonbit
 /// let str = @case.reverse_case("hello")
 /// assert_eq(str, "olleh")
-/// 
+///
 /// let str = @case.reverse_case("hello world")
 /// assert_eq(str, "dlrow olleh")
 ///

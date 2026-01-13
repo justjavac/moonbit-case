@@ -16,7 +16,7 @@
 /// ```moonbit
 /// let str = @case.sponge_case("hello world")
 /// assert_eq(str, "hElLo WoRlD")
-/// 
+///
 /// let str = @case.sponge_case("test string")
 /// assert_eq(str, "tEsT sTrInG")
 ///

@@ -15,7 +15,7 @@
 /// ```moonbit
 /// let str = @case.dot_case("hello world")
 /// assert_eq(str, "hello.world")
-/// 
+///
 /// let str = @case.dot_case("HelloWorld")
 /// assert_eq(str, "hello.world")
 ///

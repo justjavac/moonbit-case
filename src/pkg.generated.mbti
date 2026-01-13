@@ -2,37 +2,37 @@
 package "justjavac/case"
 
 // Values
-fn alternating_case(String) -> String
+pub fn alternating_case(String) -> String
 
-fn camel_case(String) -> String
+pub fn camel_case(String) -> String
 
-fn capital_case(String) -> String
+pub fn capital_case(String) -> String
 
-fn constant_case(String) -> String
+pub fn constant_case(String) -> String
 
-fn dot_case(String) -> String
+pub fn dot_case(String) -> String
 
-fn kebab_case(String) -> String
+pub fn kebab_case(String) -> String
 
-fn no_case(String) -> String
+pub fn no_case(String) -> String
 
-fn pascal_case(String) -> String
+pub fn pascal_case(String) -> String
 
-fn path_case(String) -> String
+pub fn path_case(String) -> String
 
-fn reverse_case(String) -> String
+pub fn reverse_case(String) -> String
 
-fn sentence_case(String) -> String
+pub fn sentence_case(String) -> String
 
-fn snake_case(String) -> String
+pub fn snake_case(String) -> String
 
-fn sponge_case(String) -> String
+pub fn sponge_case(String) -> String
 
-fn swap_case(String) -> String
+pub fn swap_case(String) -> String
 
-fn title_case(String) -> String
+pub fn title_case(String) -> String
 
-fn train_case(String) -> String
+pub fn train_case(String) -> String
 
 // Errors
 

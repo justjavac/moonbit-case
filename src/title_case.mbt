@@ -16,7 +16,7 @@
 /// ```moonbit
 /// let str = @case.title_case("the quick brown fox")
 /// assert_eq(str, "The Quick Brown Fox")
-/// 
+///
 /// let str = @case.title_case("a tale of two cities")
 /// assert_eq(str, "A Tale of Two Cities")
 ///
