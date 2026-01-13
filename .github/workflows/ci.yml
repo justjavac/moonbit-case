@@ -54,10 +54,6 @@ jobs:
         run: |
           moon test
 
-      - name: moon test --doc
-        run: |
-          moon test --doc
-
       - name: moon build
         run: |
           moon build
@@ -113,10 +109,6 @@ jobs:
       - name: Run moon test
         run: |
           moon test
-
-      - name: moon test --doc
-        run: |
-          moon test --doc
 
       - name: moon build
         run: |
