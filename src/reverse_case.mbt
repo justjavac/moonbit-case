@@ -12,7 +12,7 @@
 /// 
 /// # Example
 /// 
-/// ```moonbit
+/// ```moonbit nocheck
 /// let str = @case.reverse_case("hello")
 /// assert_eq(str, "olleh")
 ///

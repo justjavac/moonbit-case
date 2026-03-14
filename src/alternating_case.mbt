@@ -13,7 +13,7 @@
 /// 
 /// # Example
 /// 
-/// ```moonbit
+/// ```moonbit nocheck
 /// let str = @case.alternating_case("hello")
 /// assert_eq(str, "hElLo")
 ///

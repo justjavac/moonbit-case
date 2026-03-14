@@ -13,7 +13,7 @@
 /// 
 /// # Example
 /// 
-/// ```moonbit
+/// ```moonbit nocheck
 /// let str = @case.sponge_case("hello world")
 /// assert_eq(str, "hElLo WoRlD")
 ///

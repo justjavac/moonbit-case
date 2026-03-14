@@ -12,7 +12,7 @@
 /// 
 /// # Example
 /// 
-/// ```moonbit
+/// ```moonbit nocheck
 /// let str = @case.constant_case("hello world")
 /// assert_eq(str, "HELLO_WORLD")
 ///

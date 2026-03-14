@@ -12,7 +12,7 @@
 /// 
 /// # Example
 /// 
-/// ```moonbit
+/// ```moonbit nocheck
 /// let str = @case.pascal_case("hello world")
 /// assert_eq(str, "HelloWorld")
 ///

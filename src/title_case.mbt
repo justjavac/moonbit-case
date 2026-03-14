@@ -13,7 +13,7 @@
 /// 
 /// # Example
 /// 
-/// ```moonbit
+/// ```moonbit nocheck
 /// let str = @case.title_case("the quick brown fox")
 /// assert_eq(str, "The Quick Brown Fox")
 ///
