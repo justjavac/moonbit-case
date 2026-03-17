@@ -48,7 +48,7 @@ pub fn title_case(text : String) -> String {
     let is_minor = is_minor_word(word, minor_words)
 
     // Always capitalize first and last word, or if it's not a minor word
-    if i == 0 || i == words.length() - 1 || not(is_minor) {
+    if i == 0 || i == words.length() - 1 || !is_minor {
       result = if i == 0 {
         capitalize(word)
       } else {

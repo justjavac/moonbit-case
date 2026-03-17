@@ -54,15 +54,15 @@ fn split(text : String) -> Array[String] {
         false
       }
     }
-    if should_split && not(current_word.is_empty()) {
+    if should_split && !current_word.is_empty() {
       words.push(current_word)
       current_word = ""
     }
-    if not(is_separator(char)) {
+    if !is_separator(char) {
       current_word = current_word + char_str
     }
   }
-  if not(current_word.is_empty()) {
+  if !current_word.is_empty() {
     words.push(current_word)
   }
   words

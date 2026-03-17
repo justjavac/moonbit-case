@@ -41,7 +41,7 @@ pub fn alternating_case(text : String) -> String {
       } else {
         result = result + to_lowercase(char).to_string()
       }
-      should_uppercase = not(should_uppercase)
+      should_uppercase = !should_uppercase
     } else {
       result = result + char.to_string()
     }
