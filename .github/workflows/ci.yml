@@ -36,7 +36,6 @@ jobs:
       - name: moon install
         run: |
           moon update
-          moon install
 
       - name: moon info
         run: |
@@ -92,7 +91,6 @@ jobs:
       - name: moon install
         run: |
           moon update
-          moon install
 
       - name: moon info
         run: |
