@@ -1,32 +1,17 @@
 ///|
-/// Convert string to Sentence case.
-/// 
-/// Transforms the input string to Sentence case by capitalizing only the first letter
-/// of the first word and joining all words with spaces.
-/// 
-/// # Parameters
-/// - `text`: The input string to convert
-/// 
-/// # Returns
-/// The string converted to Sentence case
-/// 
+/// Convert a string to sentence case.
+///
+/// The first word is capitalized, later words are lowercased, and words are
+/// rejoined with spaces for plain-language display.
+///
 /// # Example
-/// 
-/// ```moonbit nocheck
-/// let str = @case.sentence_case("hello world")
-/// assert_eq(str, "Hello world")
 ///
-/// let str = @case.sentence_case("HelloWorld")
-/// assert_eq(str, "Hello world")
-///
-/// let str = @case.sentence_case("hello_world")
-/// assert_eq(str, "Hello world")
-///
-/// let str = @case.sentence_case("hello")
-/// assert_eq(str, "Hello")
-///
-/// let str = @case.sentence_case("")
-/// assert_eq(str, "")
+/// ```mbt check
+/// test "sentence_case doc example" {
+///   assert_eq(sentence_case("hello_world"), "Hello world")
+///   assert_eq(sentence_case("XMLHttpRequest"), "Xml http request")
+///   assert_eq(sentence_case(""), "")
+/// }
 /// ```
 pub fn sentence_case(text : String) -> String {
   let words = split(text)

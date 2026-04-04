@@ -1,32 +1,17 @@
 ///|
-/// Convert string to path/case.
-/// 
-/// Transforms the input string to path/case by converting all words to lowercase
-/// and joining them with forward slashes.
-/// 
-/// # Parameters
-/// - `text`: The input string to convert
-/// 
-/// # Returns
-/// The string converted to path/case
-/// 
+/// Convert a string to `path/case`.
+///
+/// Lowercase words are joined with `/`, which is useful when mapping names to
+/// route segments or hierarchical resource paths.
+///
 /// # Example
-/// 
-/// ```moonbit nocheck
-/// let str = @case.path_case("hello world")
-/// assert_eq(str, "hello/world")
 ///
-/// let str = @case.path_case("HelloWorld")
-/// assert_eq(str, "hello/world")
-///
-/// let str = @case.path_case("hello_world")
-/// assert_eq(str, "hello/world")
-///
-/// let str = @case.path_case("hello")
-/// assert_eq(str, "hello")
-///
-/// let str = @case.path_case("")
-/// assert_eq(str, "")
+/// ```mbt check
+/// test "path_case doc example" {
+///   assert_eq(path_case("hello world"), "hello/world")
+///   assert_eq(path_case("XMLHttpRequest"), "xml/http/request")
+///   assert_eq(path_case(""), "")
+/// }
 /// ```
 pub fn path_case(text : String) -> String {
   let words = split(text)

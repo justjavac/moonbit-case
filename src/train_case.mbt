@@ -1,32 +1,17 @@
 ///|
-/// Convert string to Train-Case (also known as HTTP-Header-Case).
-/// 
-/// Transforms the input string to Train-Case by capitalizing the first letter of each word
-/// and joining them with hyphens.
-/// 
-/// # Parameters
-/// - `text`: The input string to convert
-/// 
-/// # Returns
-/// The string converted to Train-Case
-/// 
+/// Convert a string to `Train-Case`.
+///
+/// Each word is capitalized and the result is joined with hyphens, which
+/// matches styles commonly used by HTTP header names and labels.
+///
 /// # Example
-/// 
-/// ```moonbit nocheck
-/// let str = @case.train_case("hello world")
-/// assert_eq(str, "Hello-World")
 ///
-/// let str = @case.train_case("HelloWorld")
-/// assert_eq(str, "Hello-World")
-///
-/// let str = @case.train_case("hello_world")
-/// assert_eq(str, "Hello-World")
-///
-/// let str = @case.train_case("hello")
-/// assert_eq(str, "Hello")
-///
-/// let str = @case.train_case("")
-/// assert_eq(str, "")
+/// ```mbt check
+/// test "train_case doc example" {
+///   assert_eq(train_case("hello world"), "Hello-World")
+///   assert_eq(train_case("test123value"), "Test-123-Value")
+///   assert_eq(train_case(""), "")
+/// }
 /// ```
 pub fn train_case(text : String) -> String {
   let words = split(text)

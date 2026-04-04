@@ -1,32 +1,17 @@
 ///|
-/// Convert string to snake_case.
-/// 
-/// Transforms the input string to snake_case by converting all words to lowercase
-/// and joining them with underscores.
-/// 
-/// # Parameters
-/// - `text`: The input string to convert
-/// 
-/// # Returns
-/// The string converted to snake_case
-/// 
+/// Convert a string to `snake_case`.
+///
+/// Lowercase words are joined with underscores after the input has been split
+/// on separators, case transitions, and number boundaries.
+///
 /// # Example
-/// 
-/// ```moonbit nocheck
-/// let str = @case.snake_case("hello world")
-/// assert_eq(str, "hello_world")
 ///
-/// let str = @case.snake_case("HelloWorld")
-/// assert_eq(str, "hello_world")
-///
-/// let str = @case.snake_case("hello-world")
-/// assert_eq(str, "hello_world")
-///
-/// let str = @case.snake_case("hello")
-/// assert_eq(str, "hello")
-///
-/// let str = @case.snake_case("")
-/// assert_eq(str, "")
+/// ```mbt check
+/// test "snake_case doc example" {
+///   assert_eq(snake_case("hello world"), "hello_world")
+///   assert_eq(snake_case("test123value"), "test_123_value")
+///   assert_eq(snake_case(""), "")
+/// }
 /// ```
 pub fn snake_case(text : String) -> String {
   let words = split(text)

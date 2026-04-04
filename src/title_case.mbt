@@ -1,38 +1,18 @@
 ///|
-/// Convert string to proper title case.
-/// 
-/// Transforms the input string to proper title case by capitalizing major words
-/// while keeping minor words (articles, prepositions, conjunctions) lowercase,
-/// except for the first and last words which are always capitalized.
-/// 
-/// # Parameters
-/// - `text`: The input string to convert
-/// 
-/// # Returns
-/// The string converted to proper title case
-/// 
+/// Convert a string to English-style title case.
+///
+/// Minor words such as `and`, `of`, and `the` stay lowercase when they appear
+/// in the middle, while the first and last word are always capitalized.
+///
 /// # Example
-/// 
-/// ```moonbit nocheck
-/// let str = @case.title_case("the quick brown fox")
-/// assert_eq(str, "The Quick Brown Fox")
 ///
-/// let str = @case.title_case("a tale of two cities")
-/// assert_eq(str, "A Tale of Two Cities")
-///
-/// let str = @case.title_case("the lord of the rings")
-/// assert_eq(str, "The Lord of the Rings")
-///
-/// let str = @case.title_case("to be or not to be")
-/// assert_eq(str, "To Be or Not to Be")
-///
-/// let str = @case.title_case("hello world")
-/// assert_eq(str, "Hello World")
-///
-/// let str = @case.title_case("")
-/// assert_eq(str, "")
+/// ```mbt check
+/// test "title_case doc example" {
+///   assert_eq(title_case("the lord of the rings"), "The Lord of the Rings")
+///   assert_eq(title_case("war and peace"), "War and Peace")
+///   assert_eq(title_case(""), "")
+/// }
 /// ```
-/// The string converted to proper title case
 pub fn title_case(text : String) -> String {
   let minor_words = [
     "a", "an", "and", "as", "at", "but", "by", "for", "if", "in", "nor", "of", "on",
@@ -62,6 +42,7 @@ pub fn title_case(text : String) -> String {
 }
 
 ///|
+/// Return whether a word belongs to the built-in minor-word list.
 fn is_minor_word(word : String, minor_words : Array[String]) -> Bool {
   for i = 0; i < minor_words.length(); i = i + 1 {
     if word == minor_words[i] {

@@ -1,32 +1,17 @@
 ///|
-/// Convert string to kebab-case (also known as param-case or dash-case).
-/// 
-/// Transforms the input string to kebab-case by converting all words to lowercase
-/// and joining them with hyphens.
-/// 
-/// # Parameters
-/// - `text`: The input string to convert
-/// 
-/// # Returns
-/// The string converted to kebab-case
-/// 
+/// Convert a string to `kebab-case`.
+///
+/// The result uses lowercase words separated by hyphens, making it a good fit
+/// for URLs, slugs, and CLI-friendly identifiers.
+///
 /// # Example
-/// 
-/// ```moonbit nocheck
-/// let str = @case.kebab_case("hello world")
-/// assert_eq(str, "hello-world")
 ///
-/// let str = @case.kebab_case("HelloWorld")
-/// assert_eq(str, "hello-world")
-///
-/// let str = @case.kebab_case("hello_world")
-/// assert_eq(str, "hello-world")
-///
-/// let str = @case.kebab_case("hello")
-/// assert_eq(str, "hello")
-///
-/// let str = @case.kebab_case("")
-/// assert_eq(str, "")
+/// ```mbt check
+/// test "kebab_case doc example" {
+///   assert_eq(kebab_case("hello world"), "hello-world")
+///   assert_eq(kebab_case("XMLHttpRequest"), "xml-http-request")
+///   assert_eq(kebab_case(""), "")
+/// }
 /// ```
 pub fn kebab_case(text : String) -> String {
   let words = split(text)

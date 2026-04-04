@@ -1,33 +1,17 @@
 ///|
-/// Convert string to alternating case.
-/// 
-/// Transforms the input string by alternating between lowercase and uppercase
-/// for each letter. Non-alphabetic characters are preserved as-is and don't
-/// affect the alternation pattern.
-/// 
-/// # Parameters
-/// - `text`: The input string to transform
-/// 
-/// # Returns
-/// The string with alternating case applied
-/// 
+/// Convert a string to alternating case.
+///
+/// Letters are rewritten one by one as lower, upper, lower, upper, while
+/// separators and digits stay unchanged and do not reset the alternation.
+///
 /// # Example
-/// 
-/// ```moonbit nocheck
-/// let str = @case.alternating_case("hello")
-/// assert_eq(str, "hElLo")
 ///
-/// let str = @case.alternating_case("hello world")
-/// assert_eq(str, "hElLo WoRlD")
-///
-/// let str = @case.alternating_case("test123")
-/// assert_eq(str, "tEsT123")
-///
-/// let str = @case.alternating_case("hello123world")
-/// assert_eq(str, "hElLo123WoRlD")
-///
-/// let str = @case.alternating_case("")
-/// assert_eq(str, "")
+/// ```mbt check
+/// test "alternating_case doc example" {
+///   assert_eq(alternating_case("hello world"), "hElLo WoRlD")
+///   assert_eq(alternating_case("hello123world"), "hElLo123WoRlD")
+///   assert_eq(alternating_case(""), "")
+/// }
 /// ```
 pub fn alternating_case(text : String) -> String {
   let chars = text.to_array()

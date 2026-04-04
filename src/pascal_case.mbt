@@ -1,32 +1,17 @@
 ///|
-/// Convert string to PascalCase (also known as UpperCamelCase).
-/// 
-/// Transforms the input string to PascalCase by capitalizing the first letter of each word
-/// and joining them together without separators.
-/// 
-/// # Parameters
-/// - `text`: The input string to convert
-/// 
-/// # Returns
-/// The string converted to PascalCase
-/// 
+/// Convert a string to `PascalCase`.
+///
+/// Every detected word is capitalized and concatenated, which makes the result
+/// suitable for type names and other UpperCamelCase identifiers.
+///
 /// # Example
-/// 
-/// ```moonbit nocheck
-/// let str = @case.pascal_case("hello world")
-/// assert_eq(str, "HelloWorld")
 ///
-/// let str = @case.pascal_case("hello-world")
-/// assert_eq(str, "HelloWorld")
-///
-/// let str = @case.pascal_case("HELLO_WORLD")
-/// assert_eq(str, "HelloWorld")
-///
-/// let str = @case.pascal_case("hello")
-/// assert_eq(str, "Hello")
-///
-/// let str = @case.pascal_case("")
-/// assert_eq(str, "")
+/// ```mbt check
+/// test "pascal_case doc example" {
+///   assert_eq(pascal_case("hello world"), "HelloWorld")
+///   assert_eq(pascal_case("test123value"), "Test123Value")
+///   assert_eq(pascal_case(""), "")
+/// }
 /// ```
 pub fn pascal_case(text : String) -> String {
   let words = split(text)

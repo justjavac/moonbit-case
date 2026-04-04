@@ -1,32 +1,17 @@
 ///|
-/// Convert string to Capital Case (Title Case with spaces).
-/// 
-/// Transforms the input string to Capital Case by capitalizing the first letter of each word
-/// and joining them with spaces.
-/// 
-/// # Parameters
-/// - `text`: The input string to convert
-/// 
-/// # Returns
-/// The string converted to Capital Case
-/// 
+/// Convert a string to `Capital Case`.
+///
+/// Each detected word is lowercased first and then capitalized so the output
+/// uses spaces between words and a stable presentation style.
+///
 /// # Example
-/// 
-/// ```moonbit nocheck
-/// let str = @case.capital_case("hello world")
-/// assert_eq(str, "Hello World")
 ///
-/// let str = @case.capital_case("HelloWorld")
-/// assert_eq(str, "Hello World")
-///
-/// let str = @case.capital_case("hello_world")
-/// assert_eq(str, "Hello World")
-///
-/// let str = @case.capital_case("hello")
-/// assert_eq(str, "Hello")
-///
-/// let str = @case.capital_case("")
-/// assert_eq(str, "")
+/// ```mbt check
+/// test "capital_case doc example" {
+///   assert_eq(capital_case("hello_world"), "Hello World")
+///   assert_eq(capital_case("XMLHttpRequest"), "Xml Http Request")
+///   assert_eq(capital_case(""), "")
+/// }
 /// ```
 pub fn capital_case(text : String) -> String {
   let words = split(text)

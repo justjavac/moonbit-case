@@ -1,32 +1,17 @@
 ///|
-/// Reverse the order of characters in a string.
-/// 
-/// Transforms the input string by reversing the order of all characters,
-/// effectively creating a mirror image of the original string.
-/// 
-/// # Parameters
-/// - `text`: The input string to reverse
-/// 
-/// # Returns
-/// The string with characters in reverse order
-/// 
+/// Reverse the characters in a string.
+///
+/// The transformation keeps every character exactly as-is and only changes the
+/// order, so casing and separators are preserved in reverse.
+///
 /// # Example
-/// 
-/// ```moonbit nocheck
-/// let str = @case.reverse_case("hello")
-/// assert_eq(str, "olleh")
 ///
-/// let str = @case.reverse_case("hello world")
-/// assert_eq(str, "dlrow olleh")
-///
-/// let str = @case.reverse_case("Test123")
-/// assert_eq(str, "321tseT")
-///
-/// let str = @case.reverse_case("MoonBit")
-/// assert_eq(str, "tiBnooM")
-///
-/// let str = @case.reverse_case("")
-/// assert_eq(str, "")
+/// ```mbt check
+/// test "reverse_case doc example" {
+///   assert_eq(reverse_case("hello"), "olleh")
+///   assert_eq(reverse_case("Test123"), "321tseT")
+///   assert_eq(reverse_case(""), "")
+/// }
 /// ```
 pub fn reverse_case(text : String) -> String {
   let chars = text.to_array()

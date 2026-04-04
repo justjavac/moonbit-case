@@ -1,32 +1,17 @@
 ///|
-/// Convert string to camelCase.
-/// 
-/// Transforms the input string to camelCase by converting the first word to lowercase
-/// and capitalizing the first letter of subsequent words, then joining them together.
-/// 
-/// # Parameters
-/// - `text`: The input string to convert
-/// 
-/// # Returns
-/// The string converted to camelCase
-/// 
+/// Convert a string to `camelCase`.
+///
+/// Word boundaries are detected from separators, case transitions, and
+/// letter-digit boundaries before the result is joined without separators.
+///
 /// # Example
-/// 
-/// ```moonbit nocheck
-/// let str = @case.camel_case("hello world")
-/// assert_eq(str, "helloWorld")
 ///
-/// let str = @case.camel_case("Hello-World")
-/// assert_eq(str, "helloWorld")
-///
-/// let str = @case.camel_case("HELLO_WORLD")
-/// assert_eq(str, "helloWorld")
-///
-/// let str = @case.camel_case("hello")
-/// assert_eq(str, "hello")
-///
-/// let str = @case.camel_case("")
-/// assert_eq(str, "")
+/// ```mbt check
+/// test "camel_case doc example" {
+///   assert_eq(camel_case("hello world"), "helloWorld")
+///   assert_eq(camel_case("XMLHttpRequest"), "xmlHttpRequest")
+///   assert_eq(camel_case("test123value"), "test123Value")
+/// }
 /// ```
 pub fn camel_case(text : String) -> String {
   let words = split(text)

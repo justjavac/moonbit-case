@@ -1,32 +1,17 @@
 ///|
-/// Convert string to CONSTANT_CASE (also known as SCREAMING_SNAKE_CASE).
-/// 
-/// Transforms the input string to CONSTANT_CASE by converting all words to uppercase
-/// and joining them with underscores.
-/// 
-/// # Parameters
-/// - `text`: The input string to convert
-/// 
-/// # Returns
-/// The string converted to CONSTANT_CASE
-/// 
+/// Convert a string to `CONSTANT_CASE`.
+///
+/// This is the uppercased form of `snake_case`, which is useful for constant
+/// names, environment variables, and similar identifier styles.
+///
 /// # Example
-/// 
-/// ```moonbit nocheck
-/// let str = @case.constant_case("hello world")
-/// assert_eq(str, "HELLO_WORLD")
 ///
-/// let str = @case.constant_case("HelloWorld")
-/// assert_eq(str, "HELLO_WORLD")
-///
-/// let str = @case.constant_case("hello-world")
-/// assert_eq(str, "HELLO_WORLD")
-///
-/// let str = @case.constant_case("hello")
-/// assert_eq(str, "HELLO")
-///
-/// let str = @case.constant_case("")
-/// assert_eq(str, "")
+/// ```mbt check
+/// test "constant_case doc example" {
+///   assert_eq(constant_case("hello world"), "HELLO_WORLD")
+///   assert_eq(constant_case("iPhone-App"), "I_PHONE_APP")
+///   assert_eq(constant_case(""), "")
+/// }
 /// ```
 pub fn constant_case(text : String) -> String {
   let words = split(text)

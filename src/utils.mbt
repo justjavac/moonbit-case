@@ -1,18 +1,7 @@
 // Common utility functions for string case conversions
 
 ///|
-/// Split a string into words by detecting case boundaries and separators.
-/// 
-/// Analyzes the input string and splits it into individual words by detecting:
-/// - Case boundaries (camelCase, PascalCase)
-/// - Separators (spaces, hyphens, underscores, etc.)
-/// - Number-letter boundaries
-/// 
-/// # Parameters
-/// - `text`: The input string to split
-/// 
-/// # Returns
-/// An array of words extracted from the input string
+/// Split text into words using separators, case changes, and digit boundaries.
 fn split(text : String) -> Array[String] {
   if text.is_empty() {
     return []
@@ -69,7 +58,7 @@ fn split(text : String) -> Array[String] {
 }
 
 ///|
-/// Check if character is a word separator
+/// Return whether a character should break words.
 fn is_separator(char : Char) -> Bool {
   match char {
     ' '
@@ -113,31 +102,31 @@ fn is_separator(char : Char) -> Bool {
 }
 
 ///|
-/// Check if character is uppercase letter
+/// Return whether a character is an uppercase ASCII letter.
 fn is_uppercase(char : Char) -> Bool {
   char >= 'A' && char <= 'Z'
 }
 
 ///|
-/// Check if character is lowercase letter  
+/// Return whether a character is a lowercase ASCII letter.
 fn is_lowercase(char : Char) -> Bool {
   char >= 'a' && char <= 'z'
 }
 
 ///|
-/// Check if character is a letter
+/// Return whether a character is an ASCII letter.
 fn is_letter(char : Char) -> Bool {
   is_uppercase(char) || is_lowercase(char)
 }
 
 ///|
-/// Check if character is a digit
+/// Return whether a character is an ASCII digit.
 fn is_digit(char : Char) -> Bool {
   char >= '0' && char <= '9'
 }
 
 ///|
-/// Convert character to uppercase
+/// Convert one ASCII letter to uppercase.
 fn to_uppercase(char : Char) -> Char {
   if is_lowercase(char) {
     (char.to_int() - 32) |> Int::unsafe_to_char
@@ -147,7 +136,7 @@ fn to_uppercase(char : Char) -> Char {
 }
 
 ///|
-/// Convert character to lowercase
+/// Convert one ASCII letter to lowercase.
 fn to_lowercase(char : Char) -> Char {
   if is_uppercase(char) {
     (char.to_int() + 32) |> Int::unsafe_to_char
@@ -157,16 +146,7 @@ fn to_lowercase(char : Char) -> Char {
 }
 
 ///|
-/// Convert string to uppercase.
-/// 
-/// Transforms all lowercase letters in the string to uppercase,
-/// while leaving other characters unchanged.
-/// 
-/// # Parameters
-/// - `text`: The input string to convert
-/// 
-/// # Returns
-/// The string with all letters converted to uppercase
+/// Convert every ASCII letter in a string to uppercase.
 fn string_to_upper(text : String) -> String {
   let chars = text.to_array()
   let mut result = ""
@@ -177,16 +157,7 @@ fn string_to_upper(text : String) -> String {
 }
 
 ///|
-/// Convert string to lowercase.
-/// 
-/// Transforms all uppercase letters in the string to lowercase,
-/// while leaving other characters unchanged.
-/// 
-/// # Parameters
-/// - `text`: The input string to convert
-/// 
-/// # Returns
-/// The string with all letters converted to lowercase
+/// Convert every ASCII letter in a string to lowercase.
 fn string_to_lower(text : String) -> String {
   let chars = text.to_array()
   let mut result = ""
@@ -197,16 +168,7 @@ fn string_to_lower(text : String) -> String {
 }
 
 ///|
-/// Capitalize the first character of a string.
-/// 
-/// Transforms the first character of the string to uppercase,
-/// while leaving the rest of the string unchanged.
-/// 
-/// # Parameters
-/// - `text`: The input string to capitalize
-/// 
-/// # Returns
-/// The string with the first character capitalized
+/// Uppercase the first character of a non-empty string.
 fn capitalize(text : String) -> String {
   if text.is_empty() {
     text

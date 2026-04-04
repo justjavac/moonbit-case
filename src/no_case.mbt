@@ -1,32 +1,17 @@
 ///|
-/// Convert string to no case.
-/// 
-/// Transforms the input string to no case by converting all words to lowercase
-/// and joining them with spaces.
-/// 
-/// # Parameters
-/// - `text`: The input string to convert
-/// 
-/// # Returns
-/// The string converted to no case
-/// 
+/// Convert a string to space-separated lowercase text.
+///
+/// This is the normalized representation used internally by several case
+/// converters when separators and original casing should be discarded.
+///
 /// # Example
-/// 
-/// ```moonbit nocheck
-/// let str = @case.no_case("hello world")
-/// assert_eq(str, "hello world")
 ///
-/// let str = @case.no_case("HelloWorld")
-/// assert_eq(str, "hello world")
-///
-/// let str = @case.no_case("hello_world")
-/// assert_eq(str, "hello world")
-///
-/// let str = @case.no_case("hello")
-/// assert_eq(str, "hello")
-///
-/// let str = @case.no_case("")
-/// assert_eq(str, "")
+/// ```mbt check
+/// test "no_case doc example" {
+///   assert_eq(no_case("HelloWorld"), "hello world")
+///   assert_eq(no_case("test123value"), "test 123 value")
+///   assert_eq(no_case(""), "")
+/// }
 /// ```
 pub fn no_case(text : String) -> String {
   let words = split(text)
