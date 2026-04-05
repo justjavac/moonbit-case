@@ -1,5 +1,8 @@
 # moonbit-case
 
+[![CI](https://github.com/justjavac/moonbit-case/actions/workflows/ci.yml/badge.svg)](https://github.com/justjavac/moonbit-case/actions/workflows/ci.yml)
+[![coverage](https://img.shields.io/codecov/c/github/justjavac/moonbit-case/main?label=coverage)](https://codecov.io/gh/justjavac/moonbit-case)
+
 Transform strings between different cases: `camelCase`, `PascalCase`, `snake_case`, `kebab-case`, `CONSTANT_CASE`, and many more.
 
 ## Installation
