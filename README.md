@@ -3,12 +3,11 @@
 [![CI](https://github.com/justjavac/moonbit-case/actions/workflows/ci.yml/badge.svg)](https://github.com/justjavac/moonbit-case/actions/workflows/ci.yml)
 [![coverage](https://img.shields.io/codecov/c/github/justjavac/moonbit-case/main?label=coverage)](https://codecov.io/gh/justjavac/moonbit-case)
 
-Transform strings between different cases: `camelCase`, `PascalCase`, `snake_case`, `kebab-case`, `CONSTANT_CASE`, and many more.
+Transform strings between different cases: `camelCase`, `PascalCase`, `snake_case`, `kebab-case`, `CONSTANT_CASE`, `flatcase`, `COBOL-CASE`, and more.
 
 ## Installation
 
 ```bash
-moon update
 moon add justjavac/case
 ```
 
@@ -21,6 +20,10 @@ moon add justjavac/case
 @case.snake_case("hello world")       // "hello_world"
 @case.kebab_case("hello world")       // "hello-world"
 @case.constant_case("hello world")    // "HELLO_WORLD"
+@case.flat_case("hello world")        // "helloworld"
+@case.upper_flat_case("hello world")  // "HELLOWORLD"
+@case.cobol_case("hello world")       // "HELLO-WORLD"
+@case.ada_case("hello world")         // "Hello_World"
 
 // Additional transformations
 @case.swap_case("Hello World")        // "hELLO wORLD"

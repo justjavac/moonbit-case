@@ -15,5 +15,9 @@ test "common conversions" {
   assert_eq(@case.snake_case("hello world"), "hello_world")
   assert_eq(@case.kebab_case("hello world"), "hello-world")
   assert_eq(@case.constant_case("hello world"), "HELLO_WORLD")
+  assert_eq(@case.flat_case("hello world"), "helloworld")
+  assert_eq(@case.upper_flat_case("hello world"), "HELLOWORLD")
+  assert_eq(@case.cobol_case("hello world"), "HELLO-WORLD")
+  assert_eq(@case.ada_case("hello world"), "Hello_World")
 }
 ```

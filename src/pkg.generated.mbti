@@ -2,15 +2,21 @@
 package "justjavac/case"
 
 // Values
+pub fn ada_case(String) -> String
+
 pub fn alternating_case(String) -> String
 
 pub fn camel_case(String) -> String
 
 pub fn capital_case(String) -> String
 
+pub fn cobol_case(String) -> String
+
 pub fn constant_case(String) -> String
 
 pub fn dot_case(String) -> String
+
+pub fn flat_case(String) -> String
 
 pub fn kebab_case(String) -> String
 
@@ -33,6 +39,8 @@ pub fn swap_case(String) -> String
 pub fn title_case(String) -> String
 
 pub fn train_case(String) -> String
+
+pub fn upper_flat_case(String) -> String
 
 // Errors
 
