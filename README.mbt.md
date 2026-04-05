@@ -1,5 +1,8 @@
 # justjavac/case
 
+[![CI](https://github.com/justjavac/moonbit-case/actions/workflows/ci.yml/badge.svg)](https://github.com/justjavac/moonbit-case/actions/workflows/ci.yml)
+[![coverage](https://img.shields.io/codecov/c/github/justjavac/moonbit-case/main?label=coverage)](https://codecov.io/gh/justjavac/moonbit-case)
+
 String case conversion helpers for MoonBit.
 
 ## Common conversions
@@ -14,4 +17,3 @@ test "common conversions" {
   assert_eq(@case.constant_case("hello world"), "HELLO_WORLD")
 }
 ```
-
