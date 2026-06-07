@@ -190,40 +190,55 @@ fn capitalize(text : String) -> String {
 
 ///|
 test "split basic words" {
-  assert_eq(split("hello world"), ["hello", "world"])
-  assert_eq(split("test string here"), ["test", "string", "here"])
+  debug_inspect(split("hello world"), content="[\"hello\", \"world\"]")
+  debug_inspect(
+    split("test string here"),
+    content="[\"test\", \"string\", \"here\"]",
+  )
 }
 
 ///|
 test "split camelCase" {
-  assert_eq(split("camelCase"), ["camel", "Case"])
-  assert_eq(split("XMLHttpRequest"), ["XML", "Http", "Request"])
-  assert_eq(split("iPhone"), ["i", "Phone"])
+  debug_inspect(split("camelCase"), content="[\"camel\", \"Case\"]")
+  debug_inspect(
+    split("XMLHttpRequest"),
+    content="[\"XML\", \"Http\", \"Request\"]",
+  )
+  debug_inspect(split("iPhone"), content="[\"i\", \"Phone\"]")
 }
 
 ///|
 test "split snake_case" {
-  assert_eq(split("snake_case"), ["snake", "case"])
-  assert_eq(split("hello_world_test"), ["hello", "world", "test"])
+  debug_inspect(split("snake_case"), content="[\"snake\", \"case\"]")
+  debug_inspect(
+    split("hello_world_test"),
+    content="[\"hello\", \"world\", \"test\"]",
+  )
 }
 
 ///|
 test "split kebab-case" {
-  assert_eq(split("kebab-case"), ["kebab", "case"])
-  assert_eq(split("hello-world-test"), ["hello", "world", "test"])
+  debug_inspect(split("kebab-case"), content="[\"kebab\", \"case\"]")
+  debug_inspect(
+    split("hello-world-test"),
+    content="[\"hello\", \"world\", \"test\"]",
+  )
 }
 
 ///|
 test "split with numbers" {
-  assert_eq(split("test123value"), ["test", "123", "value"])
-  assert_eq(split("version1.2.3"), ["version", "1", "2", "3"])
+  debug_inspect(split("test123value"), content="[\"test\", \"123\", \"value\"]")
+  debug_inspect(
+    split("version1.2.3"),
+    content="[\"version\", \"1\", \"2\", \"3\"]",
+  )
 }
 
 ///|
 test "split edge cases" {
-  assert_eq(split(""), [])
-  assert_eq(split("single"), ["single"])
-  assert_eq(split("ALLCAPS"), ["ALLCAPS"])
+  debug_inspect(split(""), content="[]")
+  debug_inspect(split("single"), content="[\"single\"]")
+  debug_inspect(split("ALLCAPS"), content="[\"ALLCAPS\"]")
 }
 
 ///|
