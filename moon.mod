@@ -21,6 +21,4 @@ keywords = [
 
 description = "String case conversion utility for MoonBit"
 
-options(
-  source: "src",
-)
+source = "src"
