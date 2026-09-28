@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "reverse_case doc example" {
-///   assert_eq(reverse_case("hello"), "olleh")
-///   assert_eq(reverse_case("Test123"), "321tseT")
-///   assert_eq(reverse_case(""), "")
+///   assert_eq(@case.reverse_case("hello"), "olleh")
+///   assert_eq(@case.reverse_case("Test123"), "321tseT")
+///   assert_eq(@case.reverse_case(""), "")
 /// }
 /// ```
 pub fn reverse_case(text : String) -> String {

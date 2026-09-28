@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "dot_case doc example" {
-///   assert_eq(dot_case("hello world"), "hello.world")
-///   assert_eq(dot_case("databaseConnectionString"), "database.connection.string")
-///   assert_eq(dot_case(""), "")
+///   assert_eq(@case.dot_case("hello world"), "hello.world")
+///   assert_eq(@case.dot_case("databaseConnectionString"), "database.connection.string")
+///   assert_eq(@case.dot_case(""), "")
 /// }
 /// ```
 pub fn dot_case(text : String) -> String {

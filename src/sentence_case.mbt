@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "sentence_case doc example" {
-///   assert_eq(sentence_case("hello_world"), "Hello world")
-///   assert_eq(sentence_case("XMLHttpRequest"), "Xml http request")
-///   assert_eq(sentence_case(""), "")
+///   assert_eq(@case.sentence_case("hello_world"), "Hello world")
+///   assert_eq(@case.sentence_case("XMLHttpRequest"), "Xml http request")
+///   assert_eq(@case.sentence_case(""), "")
 /// }
 /// ```
 pub fn sentence_case(text : String) -> String {

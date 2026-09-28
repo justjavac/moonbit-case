@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "path_case doc example" {
-///   assert_eq(path_case("hello world"), "hello/world")
-///   assert_eq(path_case("XMLHttpRequest"), "xml/http/request")
-///   assert_eq(path_case(""), "")
+///   assert_eq(@case.path_case("hello world"), "hello/world")
+///   assert_eq(@case.path_case("XMLHttpRequest"), "xml/http/request")
+///   assert_eq(@case.path_case(""), "")
 /// }
 /// ```
 pub fn path_case(text : String) -> String {

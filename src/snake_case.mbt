@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "snake_case doc example" {
-///   assert_eq(snake_case("hello world"), "hello_world")
-///   assert_eq(snake_case("test123value"), "test_123_value")
-///   assert_eq(snake_case(""), "")
+///   assert_eq(@case.snake_case("hello world"), "hello_world")
+///   assert_eq(@case.snake_case("test123value"), "test_123_value")
+///   assert_eq(@case.snake_case(""), "")
 /// }
 /// ```
 pub fn snake_case(text : String) -> String {

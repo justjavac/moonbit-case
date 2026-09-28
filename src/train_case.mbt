@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "train_case doc example" {
-///   assert_eq(train_case("hello world"), "Hello-World")
-///   assert_eq(train_case("test123value"), "Test-123-Value")
-///   assert_eq(train_case(""), "")
+///   assert_eq(@case.train_case("hello world"), "Hello-World")
+///   assert_eq(@case.train_case("test123value"), "Test-123-Value")
+///   assert_eq(@case.train_case(""), "")
 /// }
 /// ```
 pub fn train_case(text : String) -> String {

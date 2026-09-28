@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "kebab_case doc example" {
-///   assert_eq(kebab_case("hello world"), "hello-world")
-///   assert_eq(kebab_case("XMLHttpRequest"), "xml-http-request")
-///   assert_eq(kebab_case(""), "")
+///   assert_eq(@case.kebab_case("hello world"), "hello-world")
+///   assert_eq(@case.kebab_case("XMLHttpRequest"), "xml-http-request")
+///   assert_eq(@case.kebab_case(""), "")
 /// }
 /// ```
 pub fn kebab_case(text : String) -> String {

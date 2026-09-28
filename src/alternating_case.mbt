@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "alternating_case doc example" {
-///   assert_eq(alternating_case("hello world"), "hElLo WoRlD")
-///   assert_eq(alternating_case("hello123world"), "hElLo123WoRlD")
-///   assert_eq(alternating_case(""), "")
+///   assert_eq(@case.alternating_case("hello world"), "hElLo WoRlD")
+///   assert_eq(@case.alternating_case("hello123world"), "hElLo123WoRlD")
+///   assert_eq(@case.alternating_case(""), "")
 /// }
 /// ```
 pub fn alternating_case(text : String) -> String {

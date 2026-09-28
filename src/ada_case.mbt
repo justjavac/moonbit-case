@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "ada_case doc example" {
-///   assert_eq(ada_case("hello world"), "Hello_World")
-///   assert_eq(ada_case("test123value"), "Test_123_Value")
-///   assert_eq(ada_case(""), "")
+///   assert_eq(@case.ada_case("hello world"), "Hello_World")
+///   assert_eq(@case.ada_case("test123value"), "Test_123_Value")
+///   assert_eq(@case.ada_case(""), "")
 /// }
 /// ```
 pub fn ada_case(text : String) -> String {

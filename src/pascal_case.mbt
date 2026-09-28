@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "pascal_case doc example" {
-///   assert_eq(pascal_case("hello world"), "HelloWorld")
-///   assert_eq(pascal_case("test123value"), "Test123Value")
-///   assert_eq(pascal_case(""), "")
+///   assert_eq(@case.pascal_case("hello world"), "HelloWorld")
+///   assert_eq(@case.pascal_case("test123value"), "Test123Value")
+///   assert_eq(@case.pascal_case(""), "")
 /// }
 /// ```
 pub fn pascal_case(text : String) -> String {

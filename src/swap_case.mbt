@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "swap_case doc example" {
-///   assert_eq(swap_case("Hello World"), "hELLO wORLD")
-///   assert_eq(swap_case("snake_case"), "SNAKE_CASE")
-///   assert_eq(swap_case(""), "")
+///   assert_eq(@case.swap_case("Hello World"), "hELLO wORLD")
+///   assert_eq(@case.swap_case("snake_case"), "SNAKE_CASE")
+///   assert_eq(@case.swap_case(""), "")
 /// }
 /// ```
 pub fn swap_case(text : String) -> String {

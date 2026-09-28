@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "constant_case doc example" {
-///   assert_eq(constant_case("hello world"), "HELLO_WORLD")
-///   assert_eq(constant_case("iPhone-App"), "I_PHONE_APP")
-///   assert_eq(constant_case(""), "")
+///   assert_eq(@case.constant_case("hello world"), "HELLO_WORLD")
+///   assert_eq(@case.constant_case("iPhone-App"), "I_PHONE_APP")
+///   assert_eq(@case.constant_case(""), "")
 /// }
 /// ```
 pub fn constant_case(text : String) -> String {

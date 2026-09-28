@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "cobol_case doc example" {
-///   assert_eq(cobol_case("hello world"), "HELLO-WORLD")
-///   assert_eq(cobol_case("XMLHttpRequest"), "XML-HTTP-REQUEST")
-///   assert_eq(cobol_case(""), "")
+///   assert_eq(@case.cobol_case("hello world"), "HELLO-WORLD")
+///   assert_eq(@case.cobol_case("XMLHttpRequest"), "XML-HTTP-REQUEST")
+///   assert_eq(@case.cobol_case(""), "")
 /// }
 /// ```
 pub fn cobol_case(text : String) -> String {

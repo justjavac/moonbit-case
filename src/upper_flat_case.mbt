@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "upper_flat_case doc example" {
-///   assert_eq(upper_flat_case("hello world"), "HELLOWORLD")
-///   assert_eq(upper_flat_case("iPhone-App"), "IPHONEAPP")
-///   assert_eq(upper_flat_case(""), "")
+///   assert_eq(@case.upper_flat_case("hello world"), "HELLOWORLD")
+///   assert_eq(@case.upper_flat_case("iPhone-App"), "IPHONEAPP")
+///   assert_eq(@case.upper_flat_case(""), "")
 /// }
 /// ```
 pub fn upper_flat_case(text : String) -> String {

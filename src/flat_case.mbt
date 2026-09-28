@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "flat_case doc example" {
-///   assert_eq(flat_case("hello world"), "helloworld")
-///   assert_eq(flat_case("test123value"), "test123value")
-///   assert_eq(flat_case(""), "")
+///   assert_eq(@case.flat_case("hello world"), "helloworld")
+///   assert_eq(@case.flat_case("test123value"), "test123value")
+///   assert_eq(@case.flat_case(""), "")
 /// }
 /// ```
 pub fn flat_case(text : String) -> String {

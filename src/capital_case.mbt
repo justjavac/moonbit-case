@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "capital_case doc example" {
-///   assert_eq(capital_case("hello_world"), "Hello World")
-///   assert_eq(capital_case("XMLHttpRequest"), "Xml Http Request")
-///   assert_eq(capital_case(""), "")
+///   assert_eq(@case.capital_case("hello_world"), "Hello World")
+///   assert_eq(@case.capital_case("XMLHttpRequest"), "Xml Http Request")
+///   assert_eq(@case.capital_case(""), "")
 /// }
 /// ```
 pub fn capital_case(text : String) -> String {

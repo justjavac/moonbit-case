@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "no_case doc example" {
-///   assert_eq(no_case("HelloWorld"), "hello world")
-///   assert_eq(no_case("test123value"), "test 123 value")
-///   assert_eq(no_case(""), "")
+///   assert_eq(@case.no_case("HelloWorld"), "hello world")
+///   assert_eq(@case.no_case("test123value"), "test 123 value")
+///   assert_eq(@case.no_case(""), "")
 /// }
 /// ```
 pub fn no_case(text : String) -> String {

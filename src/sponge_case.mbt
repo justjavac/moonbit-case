@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "sponge_case doc example" {
-///   assert_eq(sponge_case("hello world"), "hElLo WoRlD")
-///   assert_eq(sponge_case("test123value"), "tEsT123vAlUe")
-///   assert_eq(sponge_case(""), "")
+///   assert_eq(@case.sponge_case("hello world"), "hElLo WoRlD")
+///   assert_eq(@case.sponge_case("test123value"), "tEsT123vAlUe")
+///   assert_eq(@case.sponge_case(""), "")
 /// }
 /// ```
 pub fn sponge_case(text : String) -> String {

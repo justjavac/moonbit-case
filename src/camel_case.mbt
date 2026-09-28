@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "camel_case doc example" {
-///   assert_eq(camel_case("hello world"), "helloWorld")
-///   assert_eq(camel_case("XMLHttpRequest"), "xmlHttpRequest")
-///   assert_eq(camel_case("test123value"), "test123Value")
+///   assert_eq(@case.camel_case("hello world"), "helloWorld")
+///   assert_eq(@case.camel_case("XMLHttpRequest"), "xmlHttpRequest")
+///   assert_eq(@case.camel_case("test123value"), "test123Value")
 /// }
 /// ```
 pub fn camel_case(text : String) -> String {

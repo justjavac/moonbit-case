@@ -8,9 +8,9 @@
 ///
 /// ```mbt check
 /// test "title_case doc example" {
-///   assert_eq(title_case("the lord of the rings"), "The Lord of the Rings")
-///   assert_eq(title_case("war and peace"), "War and Peace")
-///   assert_eq(title_case(""), "")
+///   assert_eq(@case.title_case("the lord of the rings"), "The Lord of the Rings")
+///   assert_eq(@case.title_case("war and peace"), "War and Peace")
+///   assert_eq(@case.title_case(""), "")
 /// }
 /// ```
 pub fn title_case(text : String) -> String {
